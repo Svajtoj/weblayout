@@ -45,7 +45,7 @@
           </li>
         </ul>
 
-        <form class="header-search-form" action="" method="get">
+        <form class="header-search-form" method="get">
           <input class="header-search-input" type="text" placeholder="Поиск">
           <button class="header-search-btn" type="submit"></button>
         </form>
@@ -58,9 +58,15 @@
       <section class="section-booking">
         <h2 class="heading">Быстрая бронь</h2>
 
-        <form class="booking-form" action="" method="get">
-          <input class="booking-form-input" type="text" placeholder="Город">
-
+        <form class="booking-form" method="get">
+          <input class="booking-form-input" list="city" placeholder="Город">
+            <datalist class="city-list" id="city">
+              <option class="city-item">Москва</option>
+              <option class="city-item">Санкт-Петербург</option>
+              <option class="city-item">Казань</option>
+              <option class="city-item">Екатеринбург</option>
+              <option class="city-item">Калининград</option>
+            </datalist>
           <input class="booking-form-input" type="text" placeholder="Категория номера">
 
           <input class="booking-form-input" type="text" placeholder="Дата заселения">
@@ -129,6 +135,7 @@
       <!-- * ПРЕИМУЩЕСТВА -->
 
       <section class="section-advantage" id="advantage">
+        <h2 class="heading">Преимущества</h2>
         <ul class="advantage-list">
           <li class="advantage-item">
             <p class="advantage-text">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
@@ -160,6 +167,7 @@
       <!-- * РАЗМЕЩЕНИЕ -->
 
       <section class="section-placement" id="placement">
+        <h2 class="heading">Размещение</h2>
         <ul class="placement-list">
           <li class="placement-item">
             <img class="placement-item-img" src="/img/23.jpg" alt="">
