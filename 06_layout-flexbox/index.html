@@ -4,52 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/e1b6154b4f.js" crossorigin="anonymous"></script>
   <title>Lagoona Сеть отелей</title>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <a class="logo-link">
-        <img class="logo-img" src="img/png/Logo.png" alt="Lagoona Сеть отелей">
-      </a>
+      <div class="header-wrapper-top">
+        <a class="logo-link">
+          <img class="logo-img" src="img/png/Logo.png" alt="Lagoona Сеть отелей">
+        </a>
 
-      <span class="header-phone__number">
-        <a class="header-phone__number-link" href="tel:+74953225448">+7 495 322 54 48</a>
-      </span>
+        <span class="header-phone__number">
+          <a class="header-phone__number-link" href="tel:+74953225448">+7 495 322 54 48</a>
+        </span>
 
-      <a class="lk-link" href="#">
-        <span class="icon__lk-link"></span>Личный кабинет
-      </a>
+        <a class="lk-link" href="#">
+          <span class="lk-link-icon"></span>Личный кабинет
+        </a>
+      </div>
 
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#about_us">О нас</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#services">Услуги</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#advantage">Преимущества</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#accomondation">Размещение</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">Блог</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <div class="header-wrapper-bottom">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#about_us">О нас</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#advantage">Преимущества</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#accomondation">Размещение</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Блог</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-        <form class="header-search-form" method="get">
-          <input class="header-search-input" type="text" placeholder="Поиск">
-          <button class="header-search-btn" type="submit"></button>
-        </form>
-      </nav>
+          <form class="header-search-form" method="get">
+            <input class="header-search-input" type="text" placeholder="Поиск">
+            <button class="header-search-btn" type="submit">
+              <!-- <i class="fas fa-search"></i> -->
+            </button>
+          </form>
+        </nav>
+      </div>
     </header>
 
     <!-- * БЫСТРАЯ БРОНЬ -->
@@ -77,7 +85,7 @@
 
           <button class="booking-form-btm" type="submit">Найти номер</button>
 
-          <span class="number-offers"></span>
+          <span class="number-offers">9 756</span>
 
           <span class="number-offers-text">предложений доступно</span>
         </form>
