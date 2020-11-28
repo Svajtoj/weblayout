@@ -63,11 +63,14 @@
     <!-- * БЫСТРАЯ БРОНЬ -->
 
     <main>
-      <section class="section-booking">
-        <h2 class="heading">Быстрая бронь</h2>
+      <div class="container-booking-special_offer">
+        <section class="section-booking">
+          <div class="wrapper-booking-heading">
+            <h2 class="heading">Быстрая бронь</h2>
+          </div>
 
-        <form class="booking-form" method="get">
-          <input class="booking-form-input" list="city" placeholder="Город">
+          <form class="booking-form" method="get">
+            <input class="booking-form-input" list="city" placeholder="Город">
             <datalist class="city-list" id="city">
               <option class="city-item">Москва</option>
               <option class="city-item">Санкт-Петербург</option>
@@ -75,33 +78,42 @@
               <option class="city-item">Екатеринбург</option>
               <option class="city-item">Калининград</option>
             </datalist>
-          <input class="booking-form-input" type="text" placeholder="Категория номера">
+            <input class="booking-form-input" type="text" placeholder="Категория номера">
 
-          <input class="booking-form-input" type="text" placeholder="Дата заселения">
+            <input class="booking-form-input" type="text" placeholder="Дата заселения">
 
-          <input class="booking-form-input" type="text" placeholder="Количество ночей">
+            <input class="booking-form-input" type="text" placeholder="Количество ночей">
 
-          <input class="booking-form-input" type="text" placeholder="Количество гостей">
+            <input class="booking-form-input" type="text" placeholder="Количество гостей">
 
-          <button class="booking-form-btm" type="submit">Найти номер</button>
+            <button class="booking-form-btm" type="submit">Найти номер</button>
 
-          <span class="number-offers">9 756</span>
+            <span class="number-offers">9 756</span>
 
-          <span class="number-offers-text">предложений доступно</span>
-        </form>
-      </section>
+            <span class="number-offers-text">предложений доступно</span>
+          </form>
+        </section>
 
-      <!-- * СПЕЦПРЕДЛОЖЕНИЕ -->
+        <!-- * СПЕЦПРЕДЛОЖЕНИЕ -->
 
-      <section class="section-special_offer">
-        <h2 class="heading">Спецпредложение</h2>
+        <section class="section-special_offer">
+          <div class="wrapper-special_offer-heading">
+            <h2 class="heading">Спецпредложение</h2>
+          </div>
+          <div class="special_offer-image">
+            <div class="special_offer-lux_rooms-wrapper">
+              <div class="special_offer-lux_rooms">Номера категории люкс</div>
 
-        <div class="special_offer-lux_rooms">Номера категории люкс</div>
+              <span class="special_offer-room_rate">от 5000 р</span>
 
-        <span class="special_offer-room_rate">от 5000 р</span>
+              <a class="special_offer-link" href="#">Подробнее</a>
+            </div>
 
-        <a class="special_offer-link" href="#">Подробнее</a>
-      </section>
+          </div>
+
+        </section>
+      </div>
+
 
       <!-- * О НАС -->
 
