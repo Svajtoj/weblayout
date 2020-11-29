@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/e1b6154b4f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <title>Lagoona Сеть отелей</title>
 </head>
 
@@ -114,7 +115,6 @@
         </section>
       </div>
 
-
       <!-- * О НАС -->
 
       <section class="section-about_us" id="about_us">
@@ -192,18 +192,26 @@
       <!-- * РАЗМЕЩЕНИЕ -->
 
       <section class="section-accomondation" id="accomondation">
-        <h2 class="heading">Размещение</h2>
+        <div class="wrapper-accomondation-heading">
+          <h2 class="heading">Размещение</h2>
+        </div>
 
           <!-- * КАРТОЧКА ОТЕЛЯ 1 -->
 
         <ul class="accomondation-list">
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/23.jpg" alt="Lagoona española">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/23.jpg" alt="Lagoona española">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="accomondation-item-desc item_desc">от
-                  <strong class="item_desc-price">4 698 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper"> от
+                    <strong class="item_desc-price">4 698 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -231,11 +239,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/24.jpg" alt="Lagoona son típicas">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/24.jpg" alt="Lagoona son típicas">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">5 148 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">5 148 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -263,11 +277,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/26.jpg" alt="Lagoona de la guerra">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/26.jpg" alt="Lagoona de la guerra">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 254 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 254 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -295,11 +315,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/29.jpg" alt="Lagoona mentira piadosa">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/29.jpg" alt="Lagoona mentira piadosa">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 320 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 320 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -327,11 +353,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/30.jpg" alt="Lagoona empujar la creatividad">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/30.jpg" alt="Lagoona empujar la creatividad">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 457р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 457р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -359,11 +391,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/31.jpg" alt="Lagoona el retorno">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/31.jpg" alt="Lagoona el retorno">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 490 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 490 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -391,11 +429,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/27.jpg" alt="Lagoona enfermo terminó">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/27.jpg" alt="Lagoona enfermo terminó">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 505 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 505 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -422,11 +466,17 @@
 
           <li class="accomondation-item">
             <article class="accomondation-article-container">
-              <img class="accomondation-item-img" src="img/25.jpg" alt="Lagoona suerte siguió siempre">
+              <div class="accomondation-item-img-wrapper">
+                <img class="accomondation-item-img" src="img/25.jpg" alt="Lagoona suerte siguió siempre">
+              </div>
 
               <div class="accomondation-item-wrapper">
-                <p class="item_desc-location">от
-                  <strong class="item_desc-price">6 824 р</strong> / ночь
+                <p class="accomondation-item-desc item_desc">
+                  <span class="item_desc-wrapper">от
+                    <strong class="item_desc-price">6 824 р</strong>
+
+                    <span class="item-desc"> / ночь</span>
+                  </span>
 
                   <span class="accomondatoin-item-rating">
                     <img class="rating-stars" src="img/svg/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -459,5 +509,42 @@
       </section>
     </main>
   </div>
+  <script>
+    $(function () {
+        jQuery('img.rating-stars, img.rating-stars-empty').each(function () {
+          var $img = jQuery(this);
+          var imgID = $img.attr('id');
+          var imgClass = $img.attr('class');
+          var imgURL = $img.attr('src');
+
+          jQuery.get(imgURL, function (data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Add replaced image's ID to the new SVG
+            if (typeof imgID !== 'undefined') {
+              $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if (typeof imgClass !== 'undefined') {
+              $svg = $svg.attr('class', imgClass + ' replaced-svg');
+            }
+
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Check if the viewport is set, else we gonna set it if we can.
+            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+              $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+            }
+
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+
+          }, 'xml');
+
+        });
+      });
+  </script>
 </body>
 </html>
