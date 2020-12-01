@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/e1b6154b4f.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <title>Lagoona Сеть отелей</title>
 </head>
 
@@ -23,8 +21,8 @@
           <a class="header-phone__number-link" href="tel:+74953225448">+7 495 322 54 48</a>
         </span>
 
-        <a class="lk-link" href="#">
-          <span class="lk-link-icon"></span>Личный кабинет
+        <a class="lk-link" href="#">Личный кабинет
+          <!-- <span class="lk-link-icon"></span>Личный кабинет -->
         </a>
       </div>
 
@@ -222,7 +220,7 @@
 
                     <img class="rating-stars" src="img/svg/star.svg" alt="">
 
-                    <img class="rating-stars-empty" src="img/svg/star.svg" alt="">
+                    <img class="rating-stars-empty" src="img/svg/star-empty.svg" alt="">
                   </span>
                 </p>
 
@@ -260,7 +258,7 @@
 
                     <img class="rating-stars" src="img/svg/star.svg" alt="">
 
-                    <img class="rating-stars-empty" src="img/svg/star.svg" alt="">
+                    <img class="rating-stars-empty" src="img/svg/star-empty.svg" alt="">
                   </span>
                 </p>
 
@@ -374,7 +372,7 @@
 
                     <img class="rating-stars" src="img/svg/star.svg" alt="">
 
-                    <img class="rating-stars-empty" src="img/svg/star.svg" alt="">
+                    <img class="rating-stars-empty" src="img/svg/star-empty.svg" alt="">
                   </span>
                 </p>
 
@@ -412,7 +410,7 @@
 
                     <img class="rating-stars" src="img/svg/star.svg" alt="">
 
-                    <img class="rating-stars-empty" src="img/svg/star.svg" alt="">
+                    <img class="rating-stars-empty" src="img/svg/star-empty.svg" alt="">
                   </span>
                 </p>
 
@@ -487,7 +485,7 @@
 
                     <img class="rating-stars" src="img/svg/star.svg" alt="">
 
-                    <img class="rating-stars-empty" src="img/svg/star.svg" alt="">
+                    <img class="rating-stars-empty" src="img/svg/star-empty.svg" alt="">
                   </span>
                 </p>
 
@@ -509,42 +507,5 @@
       </section>
     </main>
   </div>
-  <script>
-    $(function () {
-        jQuery('img.rating-stars, img.rating-stars-empty').each(function () {
-          var $img = jQuery(this);
-          var imgID = $img.attr('id');
-          var imgClass = $img.attr('class');
-          var imgURL = $img.attr('src');
-
-          jQuery.get(imgURL, function (data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-
-            // Add replaced image's ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-              $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if (typeof imgClass !== 'undefined') {
-              $svg = $svg.attr('class', imgClass + ' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Check if the viewport is set, else we gonna set it if we can.
-            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-              $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-            }
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-          }, 'xml');
-
-        });
-      });
-  </script>
 </body>
 </html>
