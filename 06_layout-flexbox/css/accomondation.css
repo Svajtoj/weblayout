@@ -1,0 +1,110 @@
+.section-accomondation {
+  margin-bottom: 43px;
+}
+
+.accomondation-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accomondation-article-container {
+  margin: 0 0 25px 0;
+  width: 373px;
+  min-height: 441px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.accomondation-item-img-wrapper {
+  width: 100%;
+  height: 217px;
+}
+
+.accomondation-item-img {
+  border-radius: 12px 12px 0 0;
+}
+
+.accomondation-item-wrapper {
+  padding: 32px 44px 0;
+}
+
+.accomondation-item-desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 13px;
+  font-size: 16px;
+  color: #999;
+}
+
+.item-desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.item_desc-price {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+}
+
+.item_desc-name {
+  margin: 0 0 13px;
+  font-size: 16px;
+  color: #333;
+}
+
+.item_desc-location {
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: #999;
+}
+
+.accomondation-item-rooms {
+  display: inline-block;
+  padding: 10px 19px;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #cc9933;
+}
+
+.accomondatoin-item-rating {
+  padding-top: 6px;
+}
+
+.rating-stars,
+.rating-stars-empty {
+  width: 14px;
+}
+
+.rating-stars path {
+  fill: #e9ce93;
+}
+
+.rating-stars-empty {
+  fill: #e6e6e6;
+}
+
+div.accomondation-article-container {
+  padding: 368px 39px 20px ;
+  background: url(../img/41.jpg) no-repeat;
+}
+
+.accomondation-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffff;
+}
+
+.accomondation-link::after {
+  position: absolute;
+  margin-left: 14px;
+  width: 10px;
+  height: 23px;
+  content: "";
+  background: url(../img/svg/angle-right-white.svg) no-repeat center;
+}
