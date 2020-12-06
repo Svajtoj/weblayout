@@ -85,13 +85,12 @@ div.accomondation-article-container {
   font-weight: 500;
   font-size: 22px;
   color: #ffffff;
-}
-
-.accomondation-link::after {
-  position: absolute;
-  margin-left: 14px;
-  width: 10px;
-  height: 23px;
-  content: "";
-  background: url(../img/svg/angle-right-white.svg) no-repeat center;
+  &::after {
+    position: absolute;
+    margin-left: 14px;
+    width: 10px;
+    height: 23px;
+    content: "";
+    background: url(../img/svg/angle-right-white.svg) no-repeat center;
+  }
 }
