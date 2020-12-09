@@ -23,66 +23,50 @@
   color: #333;
 }
 
+@mixin advantage-background {
+  background-size: auto 59px;
+  background-repeat: no-repeat;
+  background-position: top 44px left 44px;
+}
+
 .advantage-item {
   &:nth-child(1) {
     background-image: url(../img/svg/bathtub.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
-  
+
   &:nth-child(2) {
     background-image: url(../img/svg/hanger.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(3) {
     background-image: url(../img/svg/heating.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(4) {
     background-image: url(../img/svg/hotel-key.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(5) {
     background-image: url(../img/svg/parking.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(6) {
     background-image: url(../img/svg/reception.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(7) {
     background-image: url(../img/svg/security-box.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
 
   &:nth-child(8) {
     background-image: url(../img/svg/swimming-pool.svg);
-    background-size: auto 59px;
-    background-repeat: no-repeat;
-    background-position: top 44px left 44px;
+    @include advantage-background;
   }
-}
-
-%size-img {
-  background-size: auto 59px;
-  background-repeat: no-repeat;
-  background-position: top 44px left 44px;
 }
