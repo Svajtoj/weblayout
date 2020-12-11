@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 71px;
+  margin-bottom: 70px;
 }
 
 .header-wrapper-top {
@@ -26,8 +26,11 @@
 
 .lk-link {
   position: relative;
-  font-size: 16px;
   color: #cc9933;
+
+  &:hover {
+    font-weight: 500;
+  }
 }
 
 .lk-link::before {
@@ -45,7 +48,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 11px 21px;
+  padding: 11px 10px;
   border-radius: 12px;
   background-color: #fff;
   min-height: 70px;
@@ -62,13 +65,12 @@
   display: flex;
   align-items: center;
   margin: 10px;
-  font-size: 16px;
   color: #333333;
 }
 
 .header-search-form {
   position: relative;
-  width: 355px;
+  width: 359px;
   border-radius: 15px;
   background-color: #f1f1f1;
 }
@@ -88,7 +90,7 @@
 
 .header-search-btn {
   position: absolute;
-  right: 10px;
+  right: 19px;
   width: 48px;
   height: 48px;
   border-radius: 15px;

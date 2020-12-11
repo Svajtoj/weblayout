@@ -1,0 +1,154 @@
+.section-contacts {
+  margin-bottom: 22px;
+}
+
+.section-contacts-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 46px 44px 44px 44px;
+  width: 1168px;
+  min-height: 619px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.contact-left {
+  position: relative;
+  width: 384px;
+  min-height: 528px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  &:not(:first-child) {
+    padding-top: 24px;
+  }
+}
+
+.contact-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.contact-text {
+  width: 228px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.contact-tel {
+  display: block;
+  color: #cc9933;
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.contact-text-email {
+  color: #999999;
+}
+
+.contact-email {
+  color: #cc9933;
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.contact-items-btm {
+  position: absolute;
+  bottom: 0;
+  padding: 26px 29px;
+  font-weight: 700;
+  color: #cc9933;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+}
+
+.feedback-article {
+  position: relative;
+  width: 630px;
+  min-height: 529px;
+}
+
+.feedback-heading {
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333333;
+}
+
+.feedback-form {
+  width: 100%;
+}
+
+.feedback-input {
+  margin-bottom: 23px;
+  padding: 20px 20px;
+  width: 303px;
+  height: 70px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 12px;
+  &:first-child {
+    margin-right: 20px;
+  }
+
+}
+
+.feedback-textarea {
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  width: 100%;
+  min-height: 219px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+}
+
+.feedback-input,
+.feedback-textarea {
+
+  &::-webkit-input-placeholder {
+    color: #999999;
+  }
+
+  &:-moz-placeholder {
+    color: #999999;
+  }
+
+  &:-ms-input-placeholder {
+    color: #999999;
+  }
+}
+
+.privacy-policy {
+  line-height: 24px;
+  color: #999999;
+}
+
+.privcy-policy-link {
+  color: #cc9933;
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.feedback-btn {
+  position: absolute;
+  bottom: 0;
+  width: 340px;
+  height: 70px;
+  background-color: #cc9933;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}

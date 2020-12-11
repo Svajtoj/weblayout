@@ -21,19 +21,17 @@
 }
 
 .accomondation-item-wrapper {
-  padding: 32px 44px 0;
+  padding: 34px 45px 0;
 }
 
 .accomondation-item-desc {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 13px;
-  font-size: 16px;
+  margin: 0 0 12px;
   color: #999;
 }
 
 .item-desc {
-  font-size: 16px;
   font-weight: 500;
   color: #333;
 }
@@ -47,23 +45,20 @@
 .item_desc-name {
   margin: 0 0 13px;
   font-weight: 500;
-  font-size: 16px;
   color: #333;
 }
 
 .item_desc-location {
-  margin: 0 0 20px;
-  font-size: 16px;
+  margin: 0 0 19px;
   color: #999;
 }
 
 .accomondation-item-rooms {
   display: inline-block;
-  padding: 10px 19px;
+  padding: 12px 19px;
   border: 1px solid #cc9933;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 16px;
   color: #cc9933;
 }
 

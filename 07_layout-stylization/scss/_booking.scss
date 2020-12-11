@@ -22,8 +22,8 @@
 }
 
 .heading {
-  margin-bottom: 23px;
-  padding-left: 44px;
+  margin-bottom: 21px;
+  padding-left: 42px;
   font-weight: 400;
   font-size: 40px;
   color: #333333;
@@ -40,17 +40,14 @@
 
   &::-webkit-input-placeholder {
     color: #999999;
-    font-size: 16px;
   }
 
   &:-moz-placeholder {
     color: #999999;
-    font-size: 16px;
   }
 
   &:-ms-input-placeholder {
     color: #999999;
-    font-size: 16px;
   }
 
   &[list]::-webkit-calendar-picker-indicator {
@@ -59,26 +56,23 @@
 }
 
 .booking-form-btm {
-  margin-right: 30px;
+  margin-right: 27px;
   padding: 0;
   width: 159px;
   height: 70px;
   border: none;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 16px;
   color: #ffffff;
   background-color: #cc9933;
   cursor: pointer;
 }
 
 .number-offers {
-  font-size: 16px;
   color: #cc9933;
 }
 
 .number-offers-text {
-  font-size: 16px;
   color: #a0a0a0;
 }
 
@@ -106,7 +100,7 @@
 }
 
 .special_offer-lux_rooms {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 66px;
   line-height: 58px;
@@ -114,16 +108,19 @@
 }
 
 .special_offer-room_rate {
-  margin-right: 40px;
-  font-size: 35px;
+  margin-right: 37px;
+  font-size: 37px;
   color: #9b9088;
 }
 
 .special_offer-link {
   position: relative;
   display: inline-block;
-  font-size: 16px;
   color: #ffcc66;
+
+  &:hover {
+    font-weight: 500;
+  }
 
   &::after {
     position: absolute;
@@ -139,13 +136,13 @@
 /* * О НАС */
 
 .section-about_us {
-  margin-bottom: 66px;
+  margin-bottom: 57px;
   padding: 0 0 0 43px;
 }
 
 .section-about_us {
   .heading {
-    margin-bottom: 27px;
+    margin-bottom: 10px;
     padding: 0;
   }
 }
@@ -153,8 +150,7 @@
 
 .about_us-text {
   margin: 0;
-  max-width: 880px;
-  font-size: 16px;
+  max-width: 881px;
   line-height: 2;
   color: #666666;
 }

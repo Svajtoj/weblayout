@@ -84,7 +84,7 @@ h1, h2, h3, p {
 }
 
 .header {
-  margin-bottom: 71px;
+  margin-bottom: 70px;
 }
 
 .header-wrapper-top {
@@ -111,8 +111,11 @@ h1, h2, h3, p {
 
 .lk-link {
   position: relative;
-  font-size: 16px;
   color: #cc9933;
+}
+
+.lk-link:hover {
+  font-weight: 500;
 }
 
 .lk-link::before {
@@ -130,7 +133,7 @@ h1, h2, h3, p {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 11px 21px;
+  padding: 11px 10px;
   border-radius: 12px;
   background-color: #fff;
   min-height: 70px;
@@ -147,13 +150,12 @@ h1, h2, h3, p {
   display: flex;
   align-items: center;
   margin: 10px;
-  font-size: 16px;
   color: #333333;
 }
 
 .header-search-form {
   position: relative;
-  width: 355px;
+  width: 359px;
   border-radius: 15px;
   background-color: #f1f1f1;
 }
@@ -173,7 +175,7 @@ h1, h2, h3, p {
 
 .header-search-btn {
   position: absolute;
-  right: 10px;
+  right: 19px;
   width: 48px;
   height: 48px;
   border-radius: 15px;
@@ -221,8 +223,8 @@ h1, h2, h3, p {
 }
 
 .heading {
-  margin-bottom: 23px;
-  padding-left: 44px;
+  margin-bottom: 21px;
+  padding-left: 42px;
   font-weight: 400;
   font-size: 40px;
   color: #333333;
@@ -240,17 +242,14 @@ h1, h2, h3, p {
 
 .booking-form-input::-webkit-input-placeholder {
   color: #999999;
-  font-size: 16px;
 }
 
 .booking-form-input:-moz-placeholder {
   color: #999999;
-  font-size: 16px;
 }
 
 .booking-form-input:-ms-input-placeholder {
   color: #999999;
-  font-size: 16px;
 }
 
 .booking-form-input[list]::-webkit-calendar-picker-indicator {
@@ -258,26 +257,23 @@ h1, h2, h3, p {
 }
 
 .booking-form-btm {
-  margin-right: 30px;
+  margin-right: 27px;
   padding: 0;
   width: 159px;
   height: 70px;
   border: none;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 16px;
   color: #ffffff;
   background-color: #cc9933;
   cursor: pointer;
 }
 
 .number-offers {
-  font-size: 16px;
   color: #cc9933;
 }
 
 .number-offers-text {
-  font-size: 16px;
   color: #a0a0a0;
 }
 
@@ -304,7 +300,7 @@ h1, h2, h3, p {
 }
 
 .special_offer-lux_rooms {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 66px;
   line-height: 58px;
@@ -312,16 +308,19 @@ h1, h2, h3, p {
 }
 
 .special_offer-room_rate {
-  margin-right: 40px;
-  font-size: 35px;
+  margin-right: 37px;
+  font-size: 37px;
   color: #9b9088;
 }
 
 .special_offer-link {
   position: relative;
   display: inline-block;
-  font-size: 16px;
   color: #ffcc66;
+}
+
+.special_offer-link:hover {
+  font-weight: 500;
 }
 
 .special_offer-link::after {
@@ -336,19 +335,18 @@ h1, h2, h3, p {
 
 /* * О НАС */
 .section-about_us {
-  margin-bottom: 66px;
+  margin-bottom: 57px;
   padding: 0 0 0 43px;
 }
 
 .section-about_us .heading {
-  margin-bottom: 27px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
 .about_us-text {
   margin: 0;
-  max-width: 880px;
-  font-size: 16px;
+  max-width: 881px;
   line-height: 2;
   color: #666666;
 }
@@ -365,7 +363,7 @@ h1, h2, h3, p {
 
 .services-item {
   margin: 0 0 24px 0;
-  padding: 201px 30px 40px 45px;
+  padding: 201px 30px 29px 45px;
   width: 572px;
   min-height: 325px;
   border-radius: 13px;
@@ -374,7 +372,7 @@ h1, h2, h3, p {
 
 .services-item-titel {
   position: relative;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 22px;
   color: #cc9933;
@@ -391,7 +389,6 @@ h1, h2, h3, p {
 
 .services-item-text {
   margin: 0;
-  font-size: 16px;
   line-height: 2;
   color: #333333;
 }
@@ -428,7 +425,7 @@ h1, h2, h3, p {
 
 .advantage-item {
   margin: 0 0 22px 0;
-  padding: 123px 40px 40px 44px;
+  padding: 118px 40px 28px 44px;
   width: 275px;
   min-height: 275px;
   border-radius: 12px;
@@ -436,7 +433,6 @@ h1, h2, h3, p {
 }
 
 .advantage-text {
-  font-size: 16px;
   line-height: 2;
   color: #333;
 }
@@ -445,56 +441,56 @@ h1, h2, h3, p {
   background-image: url(../img/svg/bathtub.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(2) {
   background-image: url(../img/svg/hanger.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(3) {
   background-image: url(../img/svg/heating.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(4) {
   background-image: url(../img/svg/hotel-key.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(5) {
   background-image: url(../img/svg/parking.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(6) {
   background-image: url(../img/svg/reception.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(7) {
   background-image: url(../img/svg/security-box.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .advantage-item:nth-child(8) {
   background-image: url(../img/svg/swimming-pool.svg);
   background-size: auto 59px;
   background-repeat: no-repeat;
-  background-position: top 44px left 44px;
+  background-position: top 46px left 46px;
 }
 
 .section-accomondation {
@@ -520,19 +516,17 @@ h1, h2, h3, p {
 }
 
 .accomondation-item-wrapper {
-  padding: 32px 44px 0;
+  padding: 34px 45px 0;
 }
 
 .accomondation-item-desc {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 13px;
-  font-size: 16px;
+  margin: 0 0 12px;
   color: #999;
 }
 
 .item-desc {
-  font-size: 16px;
   font-weight: 500;
   color: #333;
 }
@@ -546,23 +540,20 @@ h1, h2, h3, p {
 .item_desc-name {
   margin: 0 0 13px;
   font-weight: 500;
-  font-size: 16px;
   color: #333;
 }
 
 .item_desc-location {
-  margin: 0 0 20px;
-  font-size: 16px;
+  margin: 0 0 19px;
   color: #999;
 }
 
 .accomondation-item-rooms {
   display: inline-block;
-  padding: 10px 19px;
+  padding: 12px 19px;
   border: 1px solid #cc9933;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 16px;
   color: #cc9933;
 }
 
@@ -594,4 +585,162 @@ div.accomondation-article-container {
   height: 23px;
   content: "";
   background: url(../img/svg/angle-right-white.svg) no-repeat center;
+}
+
+.section-contacts {
+  margin-bottom: 22px;
+}
+
+.section-contacts-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 46px 44px 44px 44px;
+  width: 1168px;
+  min-height: 619px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.contact-left {
+  position: relative;
+  width: 384px;
+  min-height: 528px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+
+.contact-item:not(:first-child) {
+  padding-top: 24px;
+}
+
+.contact-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.contact-text {
+  width: 228px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.contact-tel {
+  display: block;
+  color: #cc9933;
+}
+
+.contact-tel:hover {
+  font-weight: 500;
+}
+
+.contact-text-email {
+  color: #999999;
+}
+
+.contact-email {
+  color: #cc9933;
+}
+
+.contact-email:hover {
+  font-weight: 500;
+}
+
+.contact-items-btm {
+  position: absolute;
+  bottom: 0;
+  padding: 26px 29px;
+  font-weight: 700;
+  color: #cc9933;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+}
+
+.feedback-article {
+  position: relative;
+  width: 630px;
+  min-height: 529px;
+}
+
+.feedback-heading {
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333333;
+}
+
+.feedback-form {
+  width: 100%;
+}
+
+.feedback-input {
+  margin-bottom: 23px;
+  padding: 20px 20px;
+  width: 303px;
+  height: 70px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 12px;
+}
+
+.feedback-input:first-child {
+  margin-right: 20px;
+}
+
+.feedback-textarea {
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  width: 100%;
+  min-height: 219px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+}
+
+.feedback-input::-webkit-input-placeholder,
+.feedback-textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.feedback-input:-moz-placeholder,
+.feedback-textarea:-moz-placeholder {
+  color: #999999;
+}
+
+.feedback-input:-ms-input-placeholder,
+.feedback-textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+.privacy-policy {
+  line-height: 24px;
+  color: #999999;
+}
+
+.privcy-policy-link {
+  color: #cc9933;
+}
+
+.privcy-policy-link:hover {
+  font-weight: 500;
+}
+
+.feedback-btn {
+  position: absolute;
+  bottom: 0;
+  width: 340px;
+  height: 70px;
+  background-color: #cc9933;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
 }
