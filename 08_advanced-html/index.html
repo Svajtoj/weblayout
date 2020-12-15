@@ -52,7 +52,7 @@
           </ul>
 
           <form class="header-search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <input class="header-search-input" name="search" type="text" placeholder="Поиск">
+            <input class="header-search-input" name="search" type="text" required placeholder="Поиск">
 
             <button class="header-search-btn" type="submit">
             </button>
@@ -70,7 +70,7 @@
           <h2 class="heading">Быстрая бронь</h2>
 
           <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <input class="booking-form-input" type="text" name="city" placeholder="Город">
+            <input class="booking-form-input" type="text" name="city" required placeholder="Город">
 
             <!-- <datalist class="city-list" id="city">
               <option class="city-item">Москва</option>
@@ -80,13 +80,13 @@
               <option class="city-item">Калининград</option>
             </datalist> -->
 
-            <input class="booking-form-input" type="text" name="room_category" placeholder="Категория номера">
+            <input class="booking-form-input" type="text" name="room_category" required placeholder="Категория номера">
 
-            <input class="booking-form-input" type="text" name="check-in_date" placeholder="Дата заселения">
+            <input class="booking-form-input" type="text" name="check-in_date" required placeholder="Дата заселения">
 
-            <input class="booking-form-input" type="number" name="nights"  placeholder="Количество ночей">
+            <input class="booking-form-input" type="number" name="nights" required placeholder="Количество ночей">
 
-            <input class="booking-form-input" type="number" name="number_of_guests" placeholder="Количество гостей">
+            <input class="booking-form-input" type="number" name="number_of_guests" required placeholder="Количество гостей">
 
             <button class="booking-form-btm" type="submit">Найти номер</button>
 
@@ -551,11 +551,11 @@
             <h2 class="feedback-heading">Остались вопросы?</h2>
 
             <form class="feedback-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" >
-              <input class="feedback-input" type="text" name="name" placeholder="Имя">
+              <input class="feedback-input" type="text" name="name" required placeholder="Имя">
 
-              <input class="feedback-input" type="tel" name="phone" placeholder="+7">
+              <input class="feedback-input" type="tel" name="phone" required placeholder="+7">
 
-              <textarea class="feedback-textarea" name="message" placeholder="Сообщение..."></textarea>
+              <textarea class="feedback-textarea" name="message" required placeholder="Сообщение..."></textarea>
 
               <p class="privacy-policy">Отправляя свои данные вы соглашаетесь с
                 <a class="privcy-policy-link" href="#">Политикой конфиденциальности</a>
@@ -592,13 +592,23 @@
         </p>
       </div>
 
-      <div class="footer-social">
-        <a class="social-link tripadvisor" href="https://www.tripadvisor.ru/"></a>
-        <a class="social-link twitter" href="https://twitter.com/"></a>
-        <a class="social-link facebook" href="https://www.facebook.com/"></a>
-        <a class="social-link vk" href="https://vk.com/"></a>
-        <a class="social-link google-plus" href="https://www.google.com/"></a>
-      </div>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-link tripadvisor" href="https://www.tripadvisor.ru/"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-link twitter" href="https://twitter.com/"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-link facebook" href="https://www.facebook.com/"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-link vk" href="https://vk.com/"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-link google-plus" href="https://www.google.com/"></a>
+        </li>
+      </ul>
     </footer>
   </div>
 </body>

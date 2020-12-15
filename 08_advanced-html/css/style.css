@@ -702,6 +702,7 @@ div.accomondation-article-container {
   width: 100%;
   min-height: 219px;
   background-color: #f1f1f1;
+  resize: none;
 }
 
 .feedback-input::-webkit-input-placeholder,
@@ -811,7 +812,7 @@ div.accomondation-article-container {
   color: #cc9933;
 }
 
-.footer-social {
+.footer-social-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

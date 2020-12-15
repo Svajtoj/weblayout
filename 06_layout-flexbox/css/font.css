@@ -1,0 +1,50 @@
+@font-face {
+  font-weight: normal; /* * Устанавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100. */
+  font-style: normal; /* * начертание шрифта: normal- нормальное начертание, italic - курсивное, oblique - наклонное */
+   font-family: "Muller"; /* * Имя шрифта. Может быть любым */
+  font-display: swap; /* * font-display определяет то, как шрифт, подключенный через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию. Swap - eсли шрифт не загружен, любой элемент, который пытается его использовать, должен быть отрендерен запасным шрифтом. Если за это время шрифт успешно загружается, то он используется, как обычно. */
+  src:
+    local('Muller Regular'), local('MullerRegular'), /* * если у пользователя есть шрифт на компьютере, подключает его. Если нету, браузер проверяет какой из форматов шрифтов поддерживается (woff2, woff), тот и загружает. */
+    url("../fonts/MullerRegular.woff2") format("woff2"), /* * шрифт формата woff2 - меньше весит. Поэтому подгружать его предпочтительно первым. */
+    url("../fonts/MullerRegular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Muller";
+  font-display: swap;
+  src:
+    local('Muller Bold'), local('MullerBold'),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Muller";
+  font-display: swap;
+  src:
+    local('Muller Medium'), local('MullerMedium'),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Muller";
+  font-display: swap;
+  src:
+    local('Muller Light'), local('MullerLight'),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+}
+
+/* * FOIT (Flash of Invisible Text) — букв. «мелькание невидимого текста», когда во время загрузки веб-шрифта текст не отображается вообще;
+
+*    FOFT (Flash of Faux Text) — букв. «мелькание синтезированного текста», когда в промежутке между загрузкой основного веб-шрифта и его вариаций (жирный, курсив и т.д.) вместо этих вариаций браузер отображает особым образом измененный основной шрифт (так называемый «ложный жирный» и «ложный курсив», чуть подробнее о них здесь).
+
+*    FOUT (Flash of Unstyled Text) — букв. «мелькание неоформленного текста», когда во время загрузки веб-шрифта текст отображается шрифтом по умолчанию (напр. системным);
+* */
