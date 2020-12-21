@@ -1,0 +1,72 @@
+.section-advantage {
+  margin-bottom: 46px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  margin: 0 22px 22px 0;
+  padding: 114px 43px 28px 45px;
+  border-radius: 12px;
+  width: 275px;
+  min-height: 275px;
+  background-color: #fff;
+}
+
+.advantage-text {
+  line-height: 2;
+  color: #333;
+}
+
+@mixin advantage-background {
+  background-size: auto 64px;
+  background-repeat: no-repeat;
+  background-position: top 40px left 45px;
+}
+
+.advantage-item {
+  &:nth-child(1) {
+    background-image: url(../img/svg/bathtub.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(2) {
+    background-image: url(../img/svg/hanger.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(3) {
+    background-image: url(../img/svg/heating.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+    background-image: url(../img/svg/hotel-key.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(5) {
+    background-image: url(../img/svg/parking.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(6) {
+    background-image: url(../img/svg/reception.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(7) {
+    background-image: url(../img/svg/security-box.svg);
+    @include advantage-background;
+  }
+
+  &:nth-child(8) {
+    margin-right: 0;
+    background-image: url(../img/svg/swimming-pool.svg);
+    @include advantage-background;
+  }
+}

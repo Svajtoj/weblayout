@@ -1,0 +1,102 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 42px 52px 8px 52px;
+  width: 100%;
+  min-height: 338px;
+  border-radius: 12px;
+  background-color: #333333;
+  background-image: url(../img/png/sol.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 175px;
+}
+
+.footer-copyright {
+  margin-right: 122px;
+  width: 300px;
+  min-height: 237px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.copyright-text {
+  margin-bottom: 32px;
+}
+
+.footer-agreement-link {
+  color: #cc9933;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.footer-contacts {
+  margin-right: auto;
+  width: 358px;
+  min-height: 168px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-contact-address {
+  margin-bottom: 30px;
+}
+
+.footer-contact-phone {
+  margin-bottom: 24px;
+  line-height: 24px;
+  color: #cc9933;
+}
+
+.footer-contact-phone-link,
+.footer-contact-email-link {
+  display: block;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.footer-contact-email {
+  line-height: 24px;
+  color: #cc9933;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+  width: 25px;
+  height: 206px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.tripadvisor {
+  background: url(../img/svg/tripadvisor.svg) no-repeat;
+}
+
+.twitter {
+  background: url(../img/svg/twitter.svg) no-repeat;
+}
+
+.facebook {
+  background: url(../img/svg/facebook.svg) no-repeat;
+}
+
+.vk {
+  background: url(../img/svg/social.svg) no-repeat;
+}
+
+.google-plus {
+  background: url(../img/svg/google-plus-social-logotype.svg) no-repeat;
+}
