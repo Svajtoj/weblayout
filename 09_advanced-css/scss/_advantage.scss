@@ -13,12 +13,12 @@
   border-radius: 12px;
   width: 275px;
   min-height: 275px;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .advantage-text {
   line-height: 2;
-  color: #333;
+  color: var(--main-text-color);
 }
 
 @mixin advantage-background {
@@ -44,7 +44,6 @@
   }
 
   &:nth-child(4) {
-    margin-right: 0;
     background-image: url(../img/svg/hotel-key.svg);
     @include advantage-background;
   }
@@ -65,8 +64,12 @@
   }
 
   &:nth-child(8) {
-    margin-right: 0;
     background-image: url(../img/svg/swimming-pool.svg);
     @include advantage-background;
+  }
+
+  &:nth-child(4n),
+  &:last-child {
+    margin-right: 0;
   }
 }

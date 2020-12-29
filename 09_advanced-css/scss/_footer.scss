@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 338px;
   border-radius: 12px;
-  background-color: #333333;
+  background-color: var(--main-text-color);
   background-image: url(../img/png/sol.png);
   background-repeat: no-repeat;
   background-position: bottom right 175px;
@@ -16,7 +16,7 @@
   width: 300px;
   min-height: 237px;
   line-height: 2;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .copyright-text {
@@ -24,10 +24,17 @@
 }
 
 .footer-agreement-link {
-  color: #cc9933;
+  color: var(--accent-color);
+  transition: font-weight .2s linear;
 
   &:hover {
     font-weight: 500;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
@@ -36,7 +43,7 @@
   width: 358px;
   min-height: 168px;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-contact-address {
@@ -46,21 +53,28 @@
 .footer-contact-phone {
   margin-bottom: 24px;
   line-height: 24px;
-  color: #cc9933;
+  color: var(--accent-color);
 }
 
 .footer-contact-phone-link,
 .footer-contact-email-link {
   display: block;
+  transition: font-weight .2s linear;
 
   &:hover {
     font-weight: 500;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
 .footer-contact-email {
   line-height: 24px;
-  color: #cc9933;
+  color: var(--accent-color);
 }
 
 .footer-social-list {
@@ -79,6 +93,15 @@
   display: block;
   width: 25px;
   height: 25px;
+  transition: transform 0.3s linear;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
 }
 
 .tripadvisor {

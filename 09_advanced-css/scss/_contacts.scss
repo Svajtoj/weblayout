@@ -8,7 +8,7 @@
   border-radius: 12px;
   width: 1168px;
   min-height: 619px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .contact-left {
@@ -40,14 +40,22 @@
 .contact-text {
   width: 228px;
   line-height: 24px;
-  color: #333333;
+  color: var(--main-text-color);
 }
 
 .contact-tel {
   display: block;
-  color: #cc9933;
+  color: var(--accent-color);
+  transition: font-weight .2s linear;
+
   &:hover {
     font-weight: 500;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
@@ -57,9 +65,17 @@
 }
 
 .contact-email {
-  color: #cc9933;
+  color: var(--accent-color);
+  transition: font-weight .2s linear;
+
   &:hover {
     font-weight: 500;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
@@ -67,10 +83,6 @@
   position: absolute;
   bottom: 0;
   padding: 26px 29px;
-  border: 1px solid #cc9933;
-  border-radius: 12px;
-  font-weight: 700;
-  color: #cc9933;
 }
 
 .feedback-article {
@@ -83,7 +95,7 @@
   margin-bottom: 23px;
   font-weight: 400;
   font-size: 40px;
-  color: #333333;
+  color: var(--main-text-color);
 }
 
 .feedback-form {
@@ -101,7 +113,6 @@
   &:first-child {
     margin-right: 20px;
   }
-
 }
 
 .feedback-textarea {
@@ -117,7 +128,6 @@
 
 .feedback-input,
 .feedback-textarea {
-
   &::-webkit-input-placeholder {
     color: #999999;
   }
@@ -137,21 +147,23 @@
 }
 
 .privcy-policy-link {
-  color: #cc9933;
+  color: var(--accent-color);
+  transition: font-weight .2s linear;
+
   &:hover {
     font-weight: 500;
+    text-decoration: underline;
+  }
+
+  &:active {
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
 .feedback-btn {
   position: absolute;
   bottom: 0;
-  border: none;
-  border-radius: 12px;
   width: 340px;
   height: 70px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #cc9933;
-  cursor: pointer;
 }

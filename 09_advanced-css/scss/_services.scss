@@ -1,5 +1,5 @@
 .section-services {
-margin-bottom: 46px;
+  margin-bottom: 46px;
 }
 
 .services-list {
@@ -8,15 +8,19 @@ margin-bottom: 46px;
 }
 
 .services-item {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   padding: 200px 130px 30px 45px;
   border-radius: 13px;
   width: 572px;
   min-height: 325px;
-  background-color: #fff;
+  background-color: var(--white-color);
 
   &:nth-child(2n-1) {
     margin-right: 24px;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -25,22 +29,21 @@ margin-bottom: 46px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 22px;
-  color: #cc9933;
+  color: var(--accent-color);
 
   &::after {
     position: absolute;
-    margin-left: 12px;
-    width: 8px;
+    width: 20px;
     height: 22px;
     content: "";
-    background: url(../img/svg/angle-right.svg) no-repeat center;
+    background: url(../img/svg/angle-right.svg) no-repeat right;
   }
 }
 
 .services-item-text {
   margin: 0;
   line-height: 2;
-  color: #333333;
+  color: var(--main-text-color);
 }
 
 .services-item {

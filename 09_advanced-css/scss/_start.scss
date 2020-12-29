@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --main-text-color: #333;
+  --accent-color: #CC9933;
+  --white-color: #fff;
+}
+
 body {
   min-width: 320px;
   margin: 0;

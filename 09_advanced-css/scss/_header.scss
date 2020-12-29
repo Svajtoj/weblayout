@@ -19,34 +19,74 @@
   margin-right: auto;
   font-weight: 700;
   font-size: 22px;
-  color: #666666;
+  color: #666;
+  transition: transform 0.3s linear;
+
+  &:hover,
+  &:hover::after {
+    transform: scale(1.1);
+  }
+
+  &:active,
+  &:active::after {
+    transform: scale(1);
+  }
+}
+
+.header-phone__number-link {
+  &:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #666;
+    transition: width 0.3s linear;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  &:active {
+    color: var(--accent-color);
+    &:after {
+      background-color: var(--accent-color);
+    }
+  }
 }
 
 .lk-link {
   position: relative;
-  color: #cc9933;
+  color: var(--accent-color);
+  transition: transform 0.3s linear;
 
-  &:hover {
-    font-weight: 500;
+  &::before {
+    position: absolute;
+    top: 1px;
+    right: 132px;
+    width: 21px;
+    height: 12px;
+    content: "";
+    background: url(../img/svg/keyboard_tab.svg) no-repeat center;
   }
-}
 
-.lk-link::before {
-  position: absolute;
-  top: 1px;
-  right: 132px;
-  width: 21px;
-  height: 12px;
-  content: "";
-  background: url(../img/svg/keyboard_tab.svg) no-repeat center;
+  &:hover,
+  &:hover::before {
+    transform: scale(1.1);
+  }
+
+  &:active,
+  &:active::before {
+    transform: scale(1);
+  }
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 11px 10px;
+  padding: 11px 10px 11px 20px;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: var(--white-color);
   min-height: 70px;
 }
 
@@ -56,15 +96,48 @@
   width: 670px;
 }
 
-.header-nav-item:not(:last-of-type) {
-  margin-right: 27px;
+.header-nav-item {
+  transition: transform 0.3s linear, font-weight 0.2s;
+
+  &:not(:last-of-type) {
+    margin-right: 47px;
+  }
+
+  &:hover,
+  &:hover::after {
+    transform: scale(1.1);
+    font-weight: 500;
+  }
+
+  &:active,
+  &:active::after {
+    transform: scale(1);
+    font-weight: 500;
+  }
 }
 
 .header-nav-link {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  color: #333333;
+  color: var(--main-text-color);
+
+  &:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: var(--main-text-color);
+    transition: width 0.3s linear;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  &:active {
+    color: var(--accent-color);
+    &:after {
+      background-color: var(--accent-color);
+    }
+  }
 }
 
 .header-search-form {
