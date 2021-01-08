@@ -86,7 +86,7 @@ h1, h2, h3, p {
 .container {
   max-width: 1198px;
   margin: 0 auto;
-  padding: 25px 15px 43px;
+  padding: 30px 15px 43px;
 }
 
 .header {
@@ -111,42 +111,25 @@ h1, h2, h3, p {
   font-weight: 700;
   font-size: 22px;
   color: #666;
-  transition: transform 0.3s linear;
 }
 
-.header-phone__number:hover, .header-phone__number:hover::after {
-  transform: scale(1.1);
+.link-style {
+  transition: opacity 0.2s linear, transform .2s linear;
 }
 
-.header-phone__number:active, .header-phone__number:active::after {
-  transform: scale(1);
+.link-style:hover {
+  transform: translateY(-2px);
 }
 
-.header-phone__number-link:after {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 0%;
-  background-color: #666;
-  transition: width 0.3s linear;
-}
-
-.header-phone__number-link:hover:after {
-  width: 100%;
-}
-
-.header-phone__number-link:active {
-  color: var(--accent-color);
-}
-
-.header-phone__number-link:active:after {
-  background-color: var(--accent-color);
+.link-style:active {
+  opacity: .5;
+  transform: translateY(0);
 }
 
 .lk-link {
   position: relative;
   color: var(--accent-color);
-  transition: transform 0.3s linear;
+  will-change: transform, opacity;
 }
 
 .lk-link::before {
@@ -157,14 +140,6 @@ h1, h2, h3, p {
   height: 12px;
   content: "";
   background: url(../img/svg/keyboard_tab.svg) no-repeat center;
-}
-
-.lk-link:hover, .lk-link:hover::before {
-  transform: scale(1.1);
-}
-
-.lk-link:active, .lk-link:active::before {
-  transform: scale(1);
 }
 
 .header-nav {
@@ -182,47 +157,12 @@ h1, h2, h3, p {
   width: 670px;
 }
 
-.header-nav-item {
-  transition: transform 0.3s linear, font-weight 0.2s;
-}
-
 .header-nav-item:not(:last-of-type) {
   margin-right: 47px;
 }
 
-.header-nav-item:hover, .header-nav-item:hover::after {
-  transform: scale(1.1);
-  font-weight: 500;
-}
-
-.header-nav-item:active, .header-nav-item:active::after {
-  transform: scale(1);
-  font-weight: 500;
-}
-
 .header-nav-link {
   color: var(--main-text-color);
-}
-
-.header-nav-link:after {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 0%;
-  background-color: var(--main-text-color);
-  transition: width 0.3s linear;
-}
-
-.header-nav-link:hover:after {
-  width: 100%;
-}
-
-.header-nav-link:active {
-  color: var(--accent-color);
-}
-
-.header-nav-link:active:after {
-  background-color: var(--accent-color);
 }
 
 .header-search-form {
@@ -327,33 +267,54 @@ h1, h2, h3, p {
   display: none;
 }
 
-.form-btm {
+.form-btn {
+  position: relative;
+  z-index: 1;
   border: none;
   border-radius: 12px;
   font-weight: bold;
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  transition: transform .2s ease-in;
 }
 
-.form-btm:hover {
-  transform: translateY(-2px);
+.form-btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  content: "";
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  transition: opacity .2s ease-in;
 }
 
-.form-btm:active {
+.form-btn:hover {
+  transform: translateY(-2px);
+}
+
+.form-btn:hover::after {
+  opacity: 1;
+}
+
+.form-btn:active {
   transform: translateY(0px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
 }
 
-.form-btm:focus {
+.form-btn:active::after {
+  opacity: 0;
+}
+
+.form-btn:focus {
   outline-offset: -20px;
   outline-style: dotted;
   outline-width: 1px;
 }
 
-.booking-form-btm {
+.booking-form-btn {
   margin-right: 27px;
   padding: 0;
   width: 159px;
@@ -408,7 +369,7 @@ h1, h2, h3, p {
   position: relative;
   display: inline-block;
   color: #ffcc66;
-  transition: transform 0.3s linear;
+  will-change: transform, opacity;
 }
 
 .special_offer-link::after {
@@ -417,14 +378,6 @@ h1, h2, h3, p {
   height: 15px;
   content: "";
   background: url(../img/svg/angle-right.svg) no-repeat right;
-}
-
-.special_offer-link:hover, .special_offer-link:hover::after {
-  transform: scale(1.1);
-}
-
-.special_offer-link:active, .special_offer-link:active::after {
-  transform: scale(1);
 }
 
 /* * О НАС */
@@ -477,9 +430,10 @@ h1, h2, h3, p {
   font-weight: 500;
   font-size: 22px;
   color: var(--accent-color);
+  will-change: transform, opacity;
 }
 
-.services-item-titel::after {
+.services-item-link::after {
   position: absolute;
   width: 20px;
   height: 22px;
@@ -663,22 +617,43 @@ h1, h2, h3, p {
 }
 
 .link-btn {
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--accent-color);
   border-radius: 12px;
   font-weight: bold;
   color: var(--accent-color);
   background-color: transparent;
-  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  transition: transform .2s ease-in;
+}
+
+.link-btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  content: "";
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25), 2px 3px 5px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  transition: opacity .2s ease-in;
 }
 
 .link-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.link-btn:hover::after {
+  opacity: 1;
 }
 
 .link-btn:active {
   transform: translateY(0px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+.link-btn:active::after {
+  opacity: 0;
 }
 
 .link-btn:focus {
@@ -715,7 +690,7 @@ div.accomondation-article-container {
   font-weight: 500;
   font-size: 22px;
   color: var(--white-color);
-  transition: transform 0.3s linear;
+  will-change: transform, opacity;
 }
 
 .accomondation-link::after {
@@ -725,24 +700,6 @@ div.accomondation-article-container {
   height: 23px;
   content: "";
   background: url(../img/svg/angle-right-white.svg) no-repeat right;
-}
-
-.accomondation-link:before {
-  position: absolute;
-  display: block;
-  bottom: -52px;
-  right: -60px;
-  content: "";
-  width: 373px;
-  height: 443px;
-}
-
-.accomondation-link:hover {
-  transform: scale(1.1);
-}
-
-.accomondation-link:active {
-  transform: scale(1);
 }
 
 .section-contacts {
@@ -791,19 +748,8 @@ div.accomondation-article-container {
 }
 
 .contact-tel {
-  display: block;
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-}
-
-.contact-tel:hover {
-  font-weight: 500;
-  text-decoration-line: underline;
-}
-
-.contact-tel:active {
-  font-weight: 400;
-  text-decoration: none;
 }
 
 .contact-text-email {
@@ -812,18 +758,8 @@ div.accomondation-article-container {
 }
 
 .contact-email {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-}
-
-.contact-email:hover {
-  font-weight: 500;
-  text-decoration-line: underline;
-}
-
-.contact-email:active {
-  font-weight: 400;
-  text-decoration: none;
 }
 
 .contact-items-btm {
@@ -895,18 +831,8 @@ div.accomondation-article-container {
 }
 
 .privcy-policy-link {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-}
-
-.privcy-policy-link:hover {
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.privcy-policy-link:active {
-  font-weight: 400;
-  text-decoration: none;
 }
 
 .feedback-btn {
@@ -942,18 +868,8 @@ div.accomondation-article-container {
 }
 
 .footer-agreement-link {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-}
-
-.footer-agreement-link:hover {
-  font-weight: 500;
-  text-decoration-line: underline;
-}
-
-.footer-agreement-link:active {
-  font-weight: 400;
-  text-decoration: none;
 }
 
 .footer-contacts {
@@ -976,20 +892,7 @@ div.accomondation-article-container {
 
 .footer-contact-phone-link,
 .footer-contact-email-link {
-  display: block;
-  transition: font-weight .2s linear;
-}
-
-.footer-contact-phone-link:hover,
-.footer-contact-email-link:hover {
-  font-weight: 500;
-  text-decoration-line: underline;
-}
-
-.footer-contact-phone-link:active,
-.footer-contact-email-link:active {
-  font-weight: 400;
-  text-decoration: none;
+  display: inline-block;
 }
 
 .footer-contact-email {

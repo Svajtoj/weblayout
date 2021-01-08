@@ -24,18 +24,8 @@
 }
 
 .footer-agreement-link {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-
-  &:hover {
-    font-weight: 500;
-    text-decoration-line: underline;
-  }
-
-  &:active {
-    font-weight: 400;
-    text-decoration: none;
-  }
 }
 
 .footer-contacts {
@@ -58,18 +48,7 @@
 
 .footer-contact-phone-link,
 .footer-contact-email-link {
-  display: block;
-  transition: font-weight .2s linear;
-
-  &:hover {
-    font-weight: 500;
-    text-decoration-line: underline;
-  }
-
-  &:active {
-    font-weight: 400;
-    text-decoration: none;
-  }
+  display: inline-block;
 }
 
 .footer-contact-email {

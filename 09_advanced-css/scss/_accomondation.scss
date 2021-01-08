@@ -65,30 +65,40 @@
 }
 
 .link-btn {
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--accent-color);
   border-radius: 12px;
   font-weight: bold;
   color: var(--accent-color);
   background-color: transparent;
-  transition: transform .2s ease-in,
-    // border .3s .1s linear, color .3s .1s linear,
-    // background-color .3s .1s linear,
-    box-shadow .2s ease-in;
+  transition: transform .2s ease-in;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    content: "";
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25), 2px 3px 5px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    transition: opacity .2s ease-in;
+  }
 
   &:hover {
     transform: translateY(-2px);
-    // border: none;
-    // color: var(--white-color);
-    // background-color: var(--accent-color);
-    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    &::after {
+      opacity: 1;
+    }
   }
 
   &:active {
     transform: translateY(0px);
-    // border: 1px solid var(--accent-color);
-    // color: var(--accent-color);
-    // background-color: transparent;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+    &::after {
+      opacity: 0;
+    }
   }
 
   &:focus {
@@ -127,7 +137,7 @@ div.accomondation-article-container {
   font-weight: 500;
   font-size: 22px;
   color: var(--white-color);
-  transition: transform 0.3s linear;
+  will-change: transform, opacity;
 
   &::after {
     position: absolute;
@@ -136,23 +146,5 @@ div.accomondation-article-container {
     height: 23px;
     content: "";
     background: url(../img/svg/angle-right-white.svg) no-repeat right;
-  }
-
-  &:before {
-    position: absolute;
-    display: block;
-    bottom: -52px;
-    right: -60px;
-    content: "";
-    width: 373px;
-    height: 443px;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    transform: scale(1);
   }
 }

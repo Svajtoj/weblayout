@@ -44,19 +44,9 @@
 }
 
 .contact-tel {
-  display: block;
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
 
-  &:hover {
-    font-weight: 500;
-    text-decoration-line: underline;
-  }
-
-  &:active {
-    font-weight: 400;
-    text-decoration: none;
-  }
 }
 
 .contact-text-email {
@@ -65,18 +55,8 @@
 }
 
 .contact-email {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-
-  &:hover {
-    font-weight: 500;
-    text-decoration-line: underline;
-  }
-
-  &:active {
-    font-weight: 400;
-    text-decoration: none;
-  }
 }
 
 .contact-items-btm {
@@ -147,18 +127,8 @@
 }
 
 .privcy-policy-link {
+  display: inline-block;
   color: var(--accent-color);
-  transition: font-weight .2s linear;
-
-  &:hover {
-    font-weight: 500;
-    text-decoration: underline;
-  }
-
-  &:active {
-    font-weight: 400;
-    text-decoration: none;
-  }
 }
 
 .feedback-btn {
