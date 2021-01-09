@@ -147,6 +147,7 @@
 }
 
 .special_offer-room_rate {
+  display: inline-block;
   margin-right: 37px;
   font-size: 37px;
   color: #9b9088;
@@ -166,16 +167,6 @@
     content: "";
     background: url(../img/svg/angle-right.svg) no-repeat right;
   }
-
-  // &:hover,
-  // &:hover::after {
-  //   transform: scale(1.1);
-  // }
-
-  // &:active,
-  // &:active::after {
-  //   transform: scale(1);
-  // }
 }
 
 /* * О НАС */

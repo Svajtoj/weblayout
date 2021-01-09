@@ -20,40 +20,7 @@
   font-weight: 700;
   font-size: 22px;
   color: #666;
-  // transition: transform 0.3s linear;
-
-  // &:hover,
-  // &:hover::after {
-  //   transform: scale(1.1);
-  // }
-
-  // &:active,
-  // &:active::after {
-  //   transform: scale(1);
-  // }
 }
-
-// .header-phone__number-link {
-//   &:after {
-//     display: block;
-//     content: "";
-//     height: 2px;
-//     width: 0%;
-//     background-color: #666;
-//     transition: width 0.3s linear;
-//   }
-
-//   &:hover:after {
-//     width: 100%;
-//   }
-
-//   &:active {
-//     color: var(--accent-color);
-//     &:after {
-//       background-color: var(--accent-color);
-//     }
-//   }
-// }
 
 .link-style {
   transition: opacity 0.2s linear, transform .2s linear;
@@ -72,7 +39,6 @@
   position: relative;
   color: var(--accent-color);
   will-change: transform, opacity;
-  // transition: transform 0.3s linear;
 
   &::before {
     position: absolute;
@@ -83,16 +49,6 @@
     content: "";
     background: url(../img/svg/keyboard_tab.svg) no-repeat center;
   }
-
-  // &:hover,
-  // &:hover::before {
-  //   transform: scale(1.1);
-  // }
-
-  // &:active,
-  // &:active::before {
-  //   transform: scale(1);
-  // }
 }
 
 .header-nav {
@@ -111,47 +67,13 @@
 }
 
 .header-nav-item {
-  // transition: transform 0.3s linear, font-weight 0.2s;
-
   &:not(:last-of-type) {
     margin-right: 47px;
   }
-
-  // &:hover,
-  // &:hover::after {
-  //   transform: scale(1.1);
-  //   font-weight: 500;
-  // }
-
-  // &:active,
-  // &:active::after {
-  //   transform: scale(1);
-  //   font-weight: 500;
-  // }
 }
 
 .header-nav-link {
   color: var(--main-text-color);
-
-  // &:after {
-  //   display: block;
-  //   content: "";
-  //   height: 2px;
-  //   width: 0%;
-  //   background-color: var(--main-text-color);
-  //   transition: width 0.3s linear;
-  // }
-
-  // &:hover:after {
-  //   width: 100%;
-  // }
-
-  // &:active {
-  //   color: var(--accent-color);
-  //   &:after {
-  //     background-color: var(--accent-color);
-  //   }
-  // }
 }
 
 .header-search-form {

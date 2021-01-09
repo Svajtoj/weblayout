@@ -147,4 +147,15 @@ div.accomondation-article-container {
     content: "";
     background: url(../img/svg/angle-right-white.svg) no-repeat right;
   }
+
+  &:before {
+    position: absolute;
+    display: block;
+    bottom: -52px;
+    right: -60px;
+    content: "";
+    width: 373px;
+    height: 443px;
+  }
+
 }

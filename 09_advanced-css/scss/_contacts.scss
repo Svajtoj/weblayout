@@ -1,8 +1,8 @@
-.section-contacts {
+.section-contacts-feedback {
   margin-bottom: 22px;
 }
 
-.section-contacts-block {
+.section-contacts-feedback--wraper {
   display: flex;
   padding: 46px 44px 44px 44px;
   border-radius: 12px;
@@ -11,7 +11,7 @@
   background-color: var(--white-color);
 }
 
-.contact-left {
+.contacts-left {
   position: relative;
   margin-right: auto;
   width: 384px;
@@ -65,7 +65,7 @@
   padding: 26px 29px;
 }
 
-.feedback-article {
+.feedback-section {
   position: relative;
   width: 630px;
   min-height: 529px;
