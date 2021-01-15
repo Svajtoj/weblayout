@@ -678,39 +678,45 @@ h1, h2, h3, p {
   width: 16px;
 }
 
-div.accomondation-article-container {
+.container-link {
+  position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 39px 39px 50px;
-  background: url(../img/41.jpg) no-repeat;
+  background-image: url(../img/41.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .accomondation-link {
-  position: relative;
-  display: block;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-left: 39px;
+  padding-right: 22px;
   font-weight: 500;
   font-size: 22px;
   color: var(--white-color);
-  will-change: transform, opacity;
-}
-
-.accomondation-link::after {
-  position: absolute;
-  display: inline-block;
-  width: 22px;
-  height: 23px;
-  content: "";
-  background: url(../img/svg/angle-right-white.svg) no-repeat right;
+  background-image: url(../img/svg/angle-right-white.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: all 0.4s;
 }
 
 .accomondation-link:before {
   position: absolute;
-  display: block;
-  bottom: -52px;
-  right: -60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   content: "";
-  width: 373px;
-  height: 443px;
+  cursor: pointer;
+}
+
+.accomondation-link:hover {
+  padding-right: 32px;
+}
+
+.accomondation-link:active {
+  opacity: .5;
 }
 
 .section-contacts-feedback {
