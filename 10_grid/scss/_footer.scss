@@ -1,0 +1,105 @@
+.footer {
+  // display: flex;
+  // flex-wrap: wrap;
+  padding: 42px 52px 8px 52px;
+  // width: 100%;
+  min-height: 338px;
+  border-radius: 12px;
+  background-color: var(--main-text-color);
+  background-image: url(../img/png/sol.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 175px;
+}
+
+.footer-copyright {
+  // margin-right: 122px;
+  // width: 300px;
+  min-height: 237px;
+  line-height: 2;
+  color: var(--white-color);
+}
+
+.copyright-text {
+  margin-bottom: 32px;
+}
+
+.footer-agreement-link {
+  display: inline-block;
+  color: var(--accent-color);
+}
+
+.footer-contacts {
+  // margin-right: auto;
+  // width: 358px;
+  min-height: 168px;
+  line-height: 30px;
+  color: var(--white-color);
+}
+
+.footer-contact-address {
+  margin-bottom: 30px;
+}
+
+.footer-contact-phone {
+  margin-bottom: 24px;
+  line-height: 24px;
+  color: var(--accent-color);
+}
+
+.footer-contact-phone-link,
+.footer-contact-email-link {
+  display: inline-block;
+}
+
+.footer-contact-email {
+  line-height: 24px;
+  color: var(--accent-color);
+}
+
+.footer-social-list {
+  // display: flex;
+  // flex-direction: column;
+  margin-top: 6px;
+  // width: 25px;
+  height: 206px;
+}
+
+.footer-social-item {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s linear;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.tripadvisor {
+  background: url(../img/svg/tripadvisor.svg) no-repeat;
+}
+
+.twitter {
+  background: url(../img/svg/twitter.svg) no-repeat;
+}
+
+.facebook {
+  background: url(../img/svg/facebook.svg) no-repeat;
+}
+
+.vk {
+  background: url(../img/svg/social.svg) no-repeat;
+}
+
+.google-plus {
+  background: url(../img/svg/google-plus-social-logotype.svg) no-repeat;
+}

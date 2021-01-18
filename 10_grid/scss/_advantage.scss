@@ -1,0 +1,68 @@
+.section-advantage {
+  margin-bottom: 46px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  margin-bottom: 24px;
+  padding: 114px 38px 28px 45px;
+  border-radius: 12px;
+  // width: 275px;
+  min-height: 275px;
+  background-color: var(--white-color);
+}
+
+.advantage-text {
+  line-height: 2;
+  color: var(--main-text-color);
+}
+
+@mixin advantage-background {
+  background-size: auto 64px;
+  background-repeat: no-repeat;
+  background-position: top 40px left 45px;
+}
+
+.bathtub {
+  background-image: url(../img/svg/bathtub.svg);
+  @include advantage-background;
+}
+
+.hanger {
+  background-image: url(../img/svg/hanger.svg);
+  @include advantage-background;
+}
+
+.heating {
+  background-image: url(../img/svg/heating.svg);
+  @include advantage-background;
+}
+
+.hotel-key {
+  background-image: url(../img/svg/hotel-key.svg);
+  @include advantage-background;
+}
+
+.parking {
+  background-image: url(../img/svg/parking.svg);
+  @include advantage-background;
+}
+
+.reception {
+  background-image: url(../img/svg/reception.svg);
+  @include advantage-background;
+}
+
+.security-box {
+  background-image: url(../img/svg/security-box.svg);
+  @include advantage-background;
+}
+
+.swimming-pool {
+  background-image: url(../img/svg/swimming-pool.svg);
+  @include advantage-background;
+}

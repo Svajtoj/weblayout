@@ -1,0 +1,73 @@
+.section-services {
+  margin-bottom: 46px;
+}
+
+.services-list {
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.services-item {
+  margin-bottom: 24px;
+  padding: 200px 76px 21px 45px;
+  // width: 572px;
+  border-radius: 13px;
+  min-height: 325px;
+  background-color: var(--white-color);
+
+  &:nth-child(2n-1) {
+    // margin-right: 24px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.services-item-titel {
+  position: relative;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--accent-color);
+  will-change: transform, opacity;
+}
+
+.services-item-link::after {
+  position: absolute;
+  width: 20px;
+  height: 31px;
+  content: "";
+  background: url(../img/svg/angle-right.svg) no-repeat right;
+}
+
+.services-item-text {
+  margin: 0;
+  line-height: 2;
+  color: var(--main-text-color);
+}
+
+.item-1 {
+  background-image: url(../img/10.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item-2 {
+  background-image: url(../img/15.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item-3 {
+  background-image: url(../img/12.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item-4 {
+  background-image: url(../img/car.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
