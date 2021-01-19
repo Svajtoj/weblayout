@@ -99,7 +99,7 @@ h1, h2, h3, p {
 }
 
 .link-style {
-  transition: opacity 0.2s linear, transform .2s linear;
+  transition: opacity 0.2s linear, transform 0.2s linear;
 }
 
 .link-style:hover {
@@ -107,7 +107,7 @@ h1, h2, h3, p {
 }
 
 .link-style:active {
-  opacity: .5;
+  opacity: 0.5;
   transform: translateY(0);
 }
 
@@ -130,6 +130,16 @@ h1, h2, h3, p {
   border-radius: 12px;
   background-color: var(--white-color);
   min-height: 70px;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-right: auto;
+  width: 677px;
+}
+
+.header-nav-item:not(:last-of-type) {
+  margin-right: 47px;
 }
 
 .header-nav-link {

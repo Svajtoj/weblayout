@@ -18,14 +18,14 @@
 }
 
 .link-style {
-  transition: opacity 0.2s linear, transform .2s linear;
+  transition: opacity 0.2s linear, transform 0.2s linear;
 
   &:hover {
     transform: translateY(-2px);
   }
 
   &:active {
-    opacity: .5;
+    opacity: 0.5;
     transform: translateY(0);
   }
 }
@@ -55,16 +55,16 @@
 }
 
 .header-nav-list {
-  // display: flex;
-  // margin-right: auto;
-  // width: 677px;
+  display: flex;
+  margin-right: auto;
+  width: 677px;
 }
 
-// .header-nav-item {
-//   &:not(:last-of-type) {
-//     margin-right: 47px;
-//   }
-// }
+.header-nav-item {
+  &:not(:last-of-type) {
+    margin-right: 47px;
+  }
+}
 
 .header-nav-link {
   color: var(--main-text-color);
