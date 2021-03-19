@@ -1,0 +1,61 @@
+.hero {
+  &__container {
+    margin-bottom: 108px;
+  }
+
+  &__slide {
+    position: relative;
+    min-height: 620px;
+    background-image: url("../img/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__text {
+    position: absolute;
+    top: 102px;
+    left: 77px;
+    max-width: 842px;
+    color: var(--white-color);
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    font-weight: 800;
+    font-size: 70.3742px;
+    line-height: 86px;
+  }
+
+  &__descr {
+    max-width: 836px;
+    margin-bottom: 96px;
+    font-weight: bold;
+    font-size: 23.4581px;
+    line-height: 29px;
+  }
+
+  &__btn {
+    padding: 28px 40px;
+    font-size: 24px;
+  }
+}
+
+.btn--gold {
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  background-color: var(--accent-color1);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: rgba(255, 153, 0, 0.6);
+  }
+
+  &:active {
+    background-color: var(--accent-color2);
+  }
+}

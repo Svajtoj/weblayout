@@ -1,0 +1,23 @@
+@mixin font($font_name, $file_name, $weight, $weight_name, $style) {
+  @font-face {
+    font-family: "#{$font_name}";
+    font-display: swap;
+    src: local("#{$font_name}"+" "+"#{$weight_name}"), local("#{$font_name}"+"-"+"#{$weight_name}"),
+      local("#{$font_name}"+"#{$weight_name}"), url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@mixin step-img($url_img) {
+  &::after {
+    display: block;
+    width: 49%;
+    content: "";
+    background-image: url("../img/#{$url_img}.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}

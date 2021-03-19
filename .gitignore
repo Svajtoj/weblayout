@@ -146,4 +146,10 @@ $RECYCLE.BIN/
 
 /dist
 /package-lock.json
-node_modules
+node_modules/
+reports/
+package.json
+package-lock.json
+gulpfile.js
+.stylelintrc.json
+.htmlhintrc
