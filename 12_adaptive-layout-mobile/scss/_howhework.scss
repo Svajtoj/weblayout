@@ -80,7 +80,7 @@
 
   &__btn-contract {
     display: inline-block;
-    padding: 20px 37px;
+    padding: 21px 37px;
     border: 1px solid var(--main-text-color);
     background-color: transparent;
     cursor: pointer;
@@ -101,6 +101,13 @@
 
 .tab-content--active {
   display: block;
+}
+
+.tab-content__wrapper::after {
+  display: block;
+  width: 49%;
+  margin-top: 6px;
+  content: "";
 }
 
 .step-1 .tab-content__wrapper {

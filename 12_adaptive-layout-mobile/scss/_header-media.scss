@@ -1,0 +1,36 @@
+@media (max-width: 1350px) {
+  .menu {
+    flex: 0 0 615px;
+    margin-right: 40px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &__container {
+      justify-content: center;
+      padding: 7px 0 17px 12px;
+    }
+
+    &__logo {
+      flex: none;
+      width: 150px;
+      height: 48px;
+      margin-left: auto;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+
+  .burger {
+    @include burger;
+  }
+}

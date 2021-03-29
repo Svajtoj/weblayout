@@ -1,0 +1,34 @@
+@media (max-width: 1350px) {
+  .footer {
+    &__container {
+      justify-content: space-around;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__container {
+      padding: 45px 14px 10px 10px;
+    }
+
+    &__left {
+      margin-right: 94px;
+    }
+
+    &__form-title {
+      padding-top: 17px;
+    }
+  }
+
+  .form {
+    &__btn {
+      margin-right: 10px;
+      padding: 22px 37px;
+    }
+  }
+}

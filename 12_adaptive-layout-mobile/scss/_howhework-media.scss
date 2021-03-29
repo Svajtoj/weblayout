@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {
+  .how-we-work {
+    &__container {
+      margin-bottom: 55px;
+    }
+  }
+
+  .tab-content {
+    &__col {
+      max-width: 46%;
+      padding-left: 2px;
+    }
+
+    &__wrapper::after {
+      width: 47%;
+    }
+  }
+
+  .tab {
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      padding: 22px 39px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  .hero {
+    &__container {
+      margin-bottom: 64px;
+    }
+
+    &__slide {
+      height: 670px;
+      background-image: url("../img/slide-1-1024.jpg");
+    }
+
+    &__text {
+      top: 228px;
+      left: 48px;
+      line-height: 1.2;
+    }
+
+    &__title {
+      margin-bottom: -9px;
+      font-size: 60px;
+    }
+
+    &__descr {
+      max-width: 780px;
+      margin-bottom: 90px;
+      font-size: 20px;
+    }
+
+    &__btn {
+      padding: 23px 38px;
+    }
+  }
+}

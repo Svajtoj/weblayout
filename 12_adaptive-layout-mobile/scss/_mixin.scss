@@ -13,10 +13,6 @@
 // Img how he work
 @mixin step-img($url_img) {
   &::after {
-    display: block;
-    width: 49%;
-    margin-top: 6px;
-    content: "";
     background-image: url("../img/#{$url_img}.jpg");
     background-repeat: no-repeat;
     background-size: cover;

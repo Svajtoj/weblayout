@@ -1,0 +1,11 @@
+@media (max-width: 1350px) {
+  .footer {
+    &__container {
+      justify-content: space-around;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+}
