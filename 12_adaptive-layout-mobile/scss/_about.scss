@@ -99,7 +99,7 @@
   justify-content: space-between;
 
   &__block {
-    position: relative;
+    // position: relative;
     display: flex;
     align-items: center;
     min-height: 295px;
@@ -150,6 +150,7 @@
     height: 133px;
     background-image: url("../img/svg/package.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -176,5 +177,6 @@
     height: 127px;
     background-image: url("../img/svg/settings.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }

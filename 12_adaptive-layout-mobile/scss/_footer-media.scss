@@ -13,7 +13,11 @@
 @media (max-width: 1200px) {
   .footer {
     &__container {
-      padding: 45px 14px 10px 10px;
+      padding: 47px 22px 15px 19px;
+    }
+
+    &__menu {
+      margin-bottom: 100px;
     }
 
     &__left {
@@ -25,10 +29,54 @@
     }
   }
 
+  .footer-menu {
+    &__item {
+      margin-bottom: 0;
+      padding-bottom: 14px;
+    }
+  }
+
   .form {
     &__btn {
       margin-right: 10px;
+      margin-bottom: 15px;
       padding: 22px 37px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__container {
+      flex-direction: column-reverse;
+      // padding: 46px 0 60px 0;
+      padding-top: 46px;
+      padding-bottom: 60px;
+      padding-left: 50px;
+    }
+
+    &__left {
+      flex: none;
+    }
+
+    &__logo-link {
+      margin-bottom: 10px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__center {
+      flex: none;
+      max-width: 535px;
+      margin-bottom: 41px;
+    }
+  }
+
+  .form {
+    &__textarea {
+      margin-bottom: 30px;
     }
   }
 }

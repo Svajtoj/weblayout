@@ -86,6 +86,22 @@ p {
 // Адаптив
 @media (max-width: 1200px) {
   .container {
-    max-width: 947px;
+    max-width: 965px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+    font-size: 14px;
   }
 }

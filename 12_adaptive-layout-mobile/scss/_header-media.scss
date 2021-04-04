@@ -15,7 +15,7 @@
   .header {
     &__container {
       justify-content: center;
-      padding: 7px 0 17px 12px;
+      padding: 7px 11px 17px 20px;
     }
 
     &__logo {
@@ -32,5 +32,37 @@
 
   .burger {
     @include burger;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      padding: 8px 44px 3px 50px;
+    }
+
+    &__search {
+      padding: 18px 0 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__container {
+      padding: 7px 15px 7px 15px;
+    }
+
+    &__logo {
+      width: 91px;
+      height: 31px;
+      margin-right: auto;
+      margin-left: 0;
+      order: -1;
+    }
+
+    &__search {
+      display: none;
+    }
   }
 }

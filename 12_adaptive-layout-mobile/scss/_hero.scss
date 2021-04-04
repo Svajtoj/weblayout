@@ -16,16 +16,19 @@
 
   &__text {
     position: absolute;
-    top: 102px;
-    left: 77px;
-    max-width: 842px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 107px 30px 30px 77px;
     line-height: 1.2;
     color: var(--white-color);
     z-index: 1;
   }
 
   &__title {
-    margin-bottom: 21px;
+    max-width: 842px;
+    margin-bottom: 23px;
     font-weight: 800;
     font-size: 70.3742px;
     // line-height: 86px;
@@ -33,7 +36,7 @@
 
   &__descr {
     max-width: 836px;
-    margin-bottom: 96px;
+    margin-bottom: 97px;
     font-weight: bold;
     font-size: 23.4581px;
     // line-height: 29px;
