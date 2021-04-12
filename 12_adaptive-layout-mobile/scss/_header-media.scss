@@ -13,6 +13,10 @@
 
 @media (max-width: 1200px) {
   .header {
+    --burger-width: 30px;
+    --burger-height: 23px;
+    --burger-line-height: 3px;
+
     &__container {
       justify-content: center;
       padding: 7px 11px 17px 20px;
@@ -49,6 +53,10 @@
 
 @media (max-width: 576px) {
   .header {
+    --burger-width: 25px;
+    --burger-height: 19px;
+    --burger-line-height: 3px;
+
     &__container {
       padding: 7px 15px 7px 15px;
     }

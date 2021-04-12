@@ -24,11 +24,6 @@
       margin-bottom: 13%;
       font-size: 20px;
     }
-
-    &__btn {
-      padding: 14px 30px;
-      font-size: 12px;
-    }
   }
 }
 
@@ -65,7 +60,7 @@
     }
 
     &__text {
-      padding: 31px 23px;
+      padding: 45px 40px;
       text-align: center;
     }
 
@@ -77,6 +72,19 @@
     &__descr {
       font-size: 12px;
       margin-bottom: 36px;
+    }
+
+    &__btn {
+      padding: 14px 30px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .hero {
+      &__text {
+        padding: 31px 23px;
+      }
     }
   }
 }

@@ -40,3 +40,39 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .faq {
+    &__container {
+      margin-bottom: 38px;
+    }
+
+    &__title {
+      margin-bottom: 13px;
+      line-height: 1.2;
+    }
+  }
+
+  .accordion {
+    &__item {
+      padding: 29px 0 31px 0;
+    }
+
+    &:hover .accordion__accord {
+      background-size: 18px;
+    }
+
+    &__title {
+      width: 82%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    &__accord {
+      width: 30px;
+      height: 30px;
+      background-size: 18px;
+    }
+  }
+}

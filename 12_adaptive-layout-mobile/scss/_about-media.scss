@@ -33,6 +33,7 @@
 
   .colum-right {
     min-height: 630px;
+
     &__block {
       // margin-bottom: 11px;
       padding: 10px 10px 10px 108px;
@@ -81,6 +82,7 @@
 
   .colum-right {
     min-height: 510px;
+
     &__block {
       min-height: 235px;
       padding: 10px 10px 10px 18px;
@@ -132,7 +134,7 @@
 
   .about {
     &__container {
-      margin-bottom: 65px;
+      margin-bottom: 29px;
     }
 
     &__title {
@@ -150,6 +152,7 @@
   }
 
   .colum-left {
+    padding-top: 71%;
     background-position: top;
     background-size: contain;
 
@@ -157,6 +160,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: end;
+      min-height: 140px;
       padding: 0;
       color: var(--main-text-color);
       background-color: inherit;
@@ -184,13 +188,13 @@
     &__block {
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: 21px;
       padding: 0;
       border: none;
     }
 
     &__icon {
       width: 65px;
-      height: 50px;
     }
 
     &__text {
@@ -207,6 +211,8 @@
   }
 
   .icon-package {
+    height: 50px;
+
     &::after {
       top: 6px;
       left: 0;
@@ -219,6 +225,24 @@
       left: 20px;
       width: 43px;
       height: 48px;
+    }
+  }
+
+  .icon-setting {
+    height: 57px;
+
+    &::after {
+      top: 13px;
+      left: 0;
+      width: 43px;
+      height: 43px;
+    }
+
+    &::before {
+      top: 0;
+      left: 17px;
+      width: 46px;
+      height: 46px;
     }
   }
 }
