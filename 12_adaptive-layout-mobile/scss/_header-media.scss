@@ -16,6 +16,8 @@
     --burger-width: 30px;
     --burger-height: 23px;
     --burger-line-height: 3px;
+    --left-values: 0;
+    --right-values: auto;
 
     &__container {
       justify-content: center;
@@ -36,6 +38,22 @@
 
   .burger {
     @include burger;
+
+    &:hover {
+      color: var(--accent-color1);
+
+      .burger__line {
+        width: 70%;
+      }
+
+      &::after {
+        width: 40%;
+      }
+    }
+
+    &:active {
+      color: var(--accent-color2);
+    }
   }
 }
 
@@ -56,6 +74,8 @@
     --burger-width: 25px;
     --burger-height: 19px;
     --burger-line-height: 3px;
+    --left-values: auto;
+    --right-values: 0;
 
     &__container {
       padding: 7px 15px 7px 15px;
