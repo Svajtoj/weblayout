@@ -1,0 +1,131 @@
+.how-we-work {
+  &__container {
+    margin-bottom: 102px;
+  }
+
+  &__title {
+    margin-bottom: 54px;
+  }
+
+  &__tab-menu {
+    margin-bottom: 52px;
+  }
+}
+
+.tab-menu {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 85px;
+    }
+  }
+
+  &__btn {
+    width: 53px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+
+    &--active {
+      color: var(--accent-color1);
+    }
+
+    &:hover {
+      color: var(--accent-color1);
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--accent-color1);
+    }
+
+    &:active {
+      color: var(--accent-color2);
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  &__col {
+    max-width: 43%;
+  }
+}
+
+.tab {
+  &__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-bottom: 61px;
+    line-height: 2;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 20px 38px;
+    margin-right: 25px;
+  }
+
+  &__btn-contract {
+    display: inline-block;
+    padding: 21px 37px;
+    border: 1px solid var(--main-text-color);
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+
+    &:hover {
+      background-color: #666666;
+      color: var(--white-color);
+    }
+
+    &:active {
+      color: var(--white-color);
+      border-color: #000000;
+      background-color: #000000;
+    }
+  }
+}
+
+.tab-content--active {
+  display: block;
+}
+
+.tab-content__wrapper::after {
+  display: block;
+  width: 49%;
+  margin-top: 6px;
+  content: "";
+}
+
+.step-1 .tab-content__wrapper {
+  @include step-img(Tabs-1);
+}
+
+.step-2 .tab-content__wrapper {
+  @include step-img(Tabs-2);
+}
+
+.step-3 .tab-content__wrapper {
+  @include step-img(Tabs-3);
+}
+
+.step-4 .tab-content__wrapper {
+  @include step-img(Tabs-4);
+}
