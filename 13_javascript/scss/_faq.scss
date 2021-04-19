@@ -67,8 +67,8 @@
   border-bottom: none;
 }
 
-.accordion .ui-state-hover {
-  position: relative;
+.accordion .ui-state-hover,
+.accordion .ui-state-focus {
   color: var(--accent-color1);
   border-color: var(--accent-color1);
   z-index: 5;

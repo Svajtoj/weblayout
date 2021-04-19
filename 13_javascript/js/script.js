@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     heightStyle: 'content',
     collapsible: true,
     // header: '> .accordion-item > .accordion-header'
-    header: "h3"
+    header: "h3",
+    active: true
   });
 });
 
