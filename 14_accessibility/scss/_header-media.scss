@@ -1,0 +1,163 @@
+@media (max-width: 1370px) {
+  .menu {
+    flex: 0 0 615px;
+    margin-right: 40px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .header {
+    --burger-width: 30px;
+    --burger-height: 23px;
+    --burger-line-height: 3px;
+    --left-values: 0;
+    --right-values: auto;
+
+    &__container {
+      position: relative;
+      justify-content: center;
+      padding: 7px 11px 17px 20px;
+    }
+
+    &__logo {
+      flex: none;
+      width: 150px;
+      height: 48px;
+      margin-left: auto;
+    }
+
+    &__menu {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      right: auto;
+      z-index: 2;
+      min-width: 420px;
+      min-height: 768px;
+      margin: 0;
+      padding: 155px 20px 20px 70px;
+      background-color: var(--white-color);
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+      transition: left 0.5s ease-in-out, right 0.5s ease-in-out;
+
+      &--active {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  .menu {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &__link {
+      margin-bottom: 67px;
+      padding: 0 0 10px 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .burger {
+    @include burger;
+
+    &:active {
+      color: var(--accent-color1);
+
+      .burger__line {
+        width: 70%;
+      }
+
+      &::after {
+        width: 40%;
+      }
+    }
+
+    &:focus {
+      color: var(--accent-color2);
+    }
+
+    &--active:active {
+      &::after {
+        width: 100%;
+        color: var(--accent-color1);
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    &__container {
+      padding: 8px 44px 3px 50px;
+    }
+
+    &__menu {
+      min-width: 300px;
+    }
+
+    &__search {
+      padding: 18px 0 15px;
+    }
+  }
+}
+
+@media (max-width: 598px) {
+  .header {
+    --burger-width: 25px;
+    --burger-height: 19px;
+    --burger-line-height: 3px;
+    --left-values: auto;
+    --right-values: 0;
+
+    &__container {
+      padding: 7px 15px 7px 15px;
+    }
+
+    &__logo {
+      width: 91px;
+      height: 31px;
+      margin-right: auto;
+      margin-left: 0;
+      order: -1;
+    }
+
+    &__menu {
+      left: auto;
+      right: -100%;
+      min-width: 200px;
+      min-height: 307px;
+      padding: 66px 20px 20px 61px;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+
+      &--active {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &__search {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__link {
+      margin-bottom: 14px;
+      padding-bottom: 5px;
+      font-size: 16px;
+    }
+  }
+}

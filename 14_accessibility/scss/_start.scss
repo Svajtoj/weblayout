@@ -1,0 +1,107 @@
+@import "../node_modules/normalize.css/normalize";
+@import "mixin";
+@include font(Montserrat, Montserrat-Bold, 600, Bold, normal);
+@include font(Montserrat, Montserrat-ExtraBold, 800, ExtraBold, normal);
+@include font(Montserrat, Montserrat-Medium, 500, Medium, normal);
+@include font(Montserrat, Montserrat-Regular, 400, Regular, normal);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  // Color
+  --main-text-color: #333333;
+  --accent-color1: #ff9900;
+  --accent-color2: #e1670e;
+  --white-color: #ffffff;
+  --footer-color: #cacaca;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--main-text-color);
+  line-height: 1;
+  background-color: var(--white-color);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1810px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+// Адаптив
+@media (max-width: 1200px) {
+  .container {
+    max-width: 965px;
+    // padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+}
