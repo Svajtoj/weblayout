@@ -1,0 +1,83 @@
+@mixin font($font_name, $file_name, $weight, $weight_name, $style) {
+  @font-face {
+    font-family: "#{$font_name}";
+    font-display: swap;
+    src: local("#{$font_name}"+" "+"#{$weight_name}"), local("#{$font_name}"+"-"+"#{$weight_name}"),
+      local("#{$font_name}"+"#{$weight_name}"), url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// Img how he work
+@mixin step-img($url_img) {
+  &::after {
+    background-image: url("../img/#{$url_img}.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+// Burger
+@mixin burger {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: var(--burger-width);
+  height: var(--burger-height);
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+
+  &__line {
+    position: absolute;
+    left: var(--left-values);
+    right: var(--right-values);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: var(--left-values);
+    right: var(--right-values);
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: calc(100% - var(--burger-line-height));
+  }
+
+  &--active {
+    .burger__line {
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      top: 50%;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 50%;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+  }
+}
