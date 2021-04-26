@@ -58,6 +58,11 @@
   }
 }
 
+.btn:focus {
+  outline: 1px solid;
+  outline-offset: 2px;
+}
+
 .btn--gold {
   font-weight: 600;
   line-height: 1;
@@ -90,4 +95,9 @@
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
+
+  &:focus {
+    outline: 2px solid var(--white-color);
+    outline-offset: 1px;
+  }
 }

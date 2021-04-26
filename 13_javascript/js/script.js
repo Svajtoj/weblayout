@@ -1,10 +1,15 @@
 'use strict';
 
+//burger
+
 document.addEventListener('DOMContentLoaded', () => {
 
-  document.querySelector('.burger').onclick = () => {
-    document.querySelector('.burger').classList.toggle('burger--active');
-    document.querySelector('.header__menu').classList.toggle('header__menu--active');
+  const burger = document.querySelector('.burger');
+  const headerMenu = document.querySelector('.header__menu');
+
+  burger.onclick = () => {
+    burger.classList.toggle('burger--active');
+    headerMenu.classList.toggle('header__menu--active');
   }
 
   // Slider
@@ -44,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.accordion').accordion({
     heightStyle: 'content',
     collapsible: true,
-    // header: '> .accordion-item > .accordion-header'
+    // header: '> .accordion-item > .accordion-header',
     header: "h3",
     active: true
   });

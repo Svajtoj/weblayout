@@ -94,4 +94,9 @@ path {
   &:active .btn-img path {
     fill: var(--accent-color2);
   }
+
+  &:focus {
+    outline: 1px solid rgba(255, 153, 0, 0.6);
+    outline-offset: unset;
+  }
 }
