@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>База знаний - домашнее задание</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="checkbox-section">
+      <h2 class="checkbox-section__title title">Категории:</h2>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Dinosaurs" checked>Динозавры
+
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Bears">Медведи
+
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="RoeDeers">Косули
+
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Foxes">Лисы
+
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Wolves">Волки
+
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+
+      <label class="checkbox-section__label">
+        <input class="checkbox-section__input visually-hidden" type="checkbox" name="DeerAndMoose">Олени и лоси
+        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
+      </label>
+    </section>
+
+    <section class="select-section">
+
+      <select class="select-section__select" name="material">
+        <option class="select-section__option" value="">Материал</option>
+
+        <option class="select-section__option">Древесина</option>
+
+        <option class="select-section__option">Металл</option>
+
+        <option class="select-section__option">Камень</option>
+
+        <option class="select-section__option">Пластик</option>
+
+        <option class="select-section__option">Композитный</option>
+
+        <option class="select-section__option">Гипс</option>
+      </select>
+    </section>
+  </div>
+  <script src="js/choices.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
