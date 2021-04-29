@@ -384,6 +384,12 @@
 
 /*=====  End of Choices  ======*/
 
-.choices__item--choice.choices__placeholder {
+/* .choices__item--choice.choices__placeholder {
+  display: none;
+} */
+
+/* Сложный селектор. Выбирает id в имени которого имеется item-choice-1 */
+
+[id*="item-choice-1"] {
   display: none;
 }

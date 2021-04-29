@@ -98,9 +98,6 @@ p {
   border-radius: 10px;
 }
 
-.checbox {
-}
-
 .checkbox-section__title {
   margin-bottom: 20px;
   font-size: 18px;
@@ -142,4 +139,8 @@ p {
   margin-bottom: 50px;
   background: #ffffff;
   border-radius: 10px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
 }
