@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Селект
+
   const element = document.querySelector('.select-section__select');
   const choices = new Choices(element, {
     searchEnabled: false,
@@ -6,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     position: 'bottom',
     itemSelectText: ' ',
   });
+
+  // Яндекс карта
 
   ymaps.ready(init);
 
@@ -29,8 +33,46 @@ document.addEventListener('DOMContentLoaded', () => {
       myMap.geoObjects.add(myPlacemark);
   }
 
+  // Scroll
+
   new SimpleBar(document.getElementById('scroll'), {
     scrollbarMaxSize: 73,
     autoHide: false
+  });
+
+  // Маска для поля формы (телефон)
+
+  const selector = document.querySelector('input[type = "tel"]');
+  const im = Inputmask("+7 (999) 999-99-99");
+
+  im.mask(selector);
+
+  // Валидация формы
+
+  new JustValidate('.form-order', {
+    rules: {
+      name: {
+        required: true,
+        minLength: 2,
+        maxLength: 10
+      },
+      tel: {
+        required: true,
+        function: (name, value) => {
+          const phone = selector.inputmask.unmaskedvalue()
+          return Number(phone) && phone.length === 10
+        }
+      },
+      email: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      name: 'Как вас зовут?',
+      tel: 'Укажите ваш телефон',
+      email: 'Укажите ваш e-mail',
+    },
+    colorWrong: '#ff5c00',
   });
 });

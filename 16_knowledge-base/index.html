@@ -8,7 +8,8 @@
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.css">
-  <link rel="stylesheet" href="/css/simplebar.css">
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/justValidateTooltip.css">
   <link rel="stylesheet" href="css/style.css">
   <noscript>
     <style>
@@ -23,6 +24,9 @@
 
 <body>
   <div class="container">
+
+    <!-- Чекбокс -->
+
     <section class="checkbox">
       <fieldset class="checkbox__fieldset">
         <legend class="checkbox__legend">Категории:</legend>
@@ -64,6 +68,8 @@
 
     </section>
 
+    <!-- Форма выбора -->
+
     <section class="select-section">
 
       <select class="select-section__select">
@@ -83,19 +89,54 @@
       </select>
     </section>
 
+    <!-- Подключение яндекс карты -->
+
     <section class="map-section">
       <div id="map" class="map-section__yamap" style="width: 460px; height: 460px"></div>
     </section>
+
+    <!-- Кастомный скролбар -->
 
     <section class="scrollbar">
       <div id="scroll" class="custom-scroll">
         Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
       </div>
     </section>
+
+    <!-- Валидация формы -->
+
+    <section class="validate-form">
+      <form class="form-order" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <label class="form-order__label" aria-label="Введите ваше имя">
+          <div class="just-validate-tooltip-container">
+            <input class="form-order__input" type="text" name="name" data-validate-field="name" placeholder="Имя*">
+          </div>
+        </label>
+
+        <label class="form-order__label" aria-label="Введите ваш телефон">
+          <div class="just-validate-tooltip-container">
+            <input class="form-order__input" type="tel" name="tel" data-validate-field="tel" placeholder="Телефон*">
+          </div>
+        </label>
+
+        <label class="form-order__label" aria-label="Введите вашу электронную почту">
+          <div class="just-validate-tooltip-container">
+            <input class="form-order__input" type="email" name="email" data-validate-field="email" placeholder="E-mail*">
+          </div>
+        </label>
+
+        <div class="form-order__btn-wrapper">
+          <button class="form-order__btn" type="submit">Заказать</button>
+        </div>
+      </form>
+    </section>
   </div>
+
   <script src="js/choices.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=cba15e17-09b6-4b55-a34f-5bb59bfc3fa0&lang=ru_RU" type="text/javascript"></script>
   <script src="js/simplebar.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
