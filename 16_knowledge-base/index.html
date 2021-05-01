@@ -8,54 +8,65 @@
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.css">
+  <link rel="stylesheet" href="/css/simplebar.css">
   <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      [ data-simplebar] {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
   <title>База знаний - домашнее задание</title>
 </head>
 
 <body>
   <div class="container">
-    <section class="checkbox-section">
-      <h2 class="checkbox-section__title title">Категории:</h2>
+    <section class="checkbox">
+      <fieldset class="checkbox__fieldset">
+        <legend class="checkbox__legend">Категории:</legend>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="Dinosaurs" checked>Динозавры
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Dinosaurs" checked>Динозавры
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
 
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="Bears">Медведи
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Bears">Медведи
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
 
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="RoeDeers">Косули
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="RoeDeers">Косули
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
 
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="Foxes">Лисы
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Foxes">Лисы
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
 
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="Wolves">Волки
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="Wolves">Волки
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
 
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
+        <label class="checkbox__label">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="DeerAndMoose">Олени и лоси
+          <span class="checkbox__style" role="checkbox" aria-checked="true"></span>
+        </label>
+      </fieldset>
 
-      <label class="checkbox-section__label">
-        <input class="checkbox-section__input visually-hidden" type="checkbox" name="DeerAndMoose">Олени и лоси
-        <span class="checkbox-section__style" role="checkbox" aria-checked="true"></span>
-      </label>
     </section>
 
     <section class="select-section">
 
-      <select class="select-section__select" name="material">
+      <select class="select-section__select">
         <option class="select-section__option" value="">Материал</option>
 
         <option class="select-section__option">Древесина</option>
@@ -73,12 +84,18 @@
     </section>
 
     <section class="map-section">
-      <div id="map" style="width: 460px; height: 460px"></div>
+      <div id="map" class="map-section__yamap" style="width: 460px; height: 460px"></div>
+    </section>
+
+    <section class="scrollbar">
+      <div id="scroll" class="custom-scroll">
+        Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+      </div>
     </section>
   </div>
   <script src="js/choices.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=cba15e17-09b6-4b55-a34f-5bb59bfc3fa0&lang=ru_RU" type="text/javascript">
-  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cba15e17-09b6-4b55-a34f-5bb59bfc3fa0&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/simplebar.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

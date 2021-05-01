@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     searchEnabled: false,
     shouldSort: false,
     position: 'bottom',
-    placeholder: true,
-    placeholderValue: 'Материал',
     itemSelectText: ' ',
   });
 
@@ -22,17 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
       hintContent: `Париж, ул. дю Фобур Сен Дени 54`,
       balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54'
     }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
+
       iconLayout: 'default#image',
-      // Своё изображение иконки метки.
       iconImageHref: 'img/Subtract.svg',
-      // Размеры метки.
       iconImageSize: [48, 48],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
     }),
 
       myMap.geoObjects.add(myPlacemark);
   }
+
+  new SimpleBar(document.getElementById('scroll'), {
+    scrollbarMaxSize: 73,
+    autoHide: false
+  });
 });

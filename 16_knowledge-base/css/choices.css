@@ -310,7 +310,7 @@
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: #f2f2f2;
+  background-color: rgba(204, 178, 110, 0.2);
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted:after {

@@ -153,3 +153,5 @@ package-lock.json
 gulpfile.js
 .stylelintrc.json
 .htmlhintrc
+/.vscode
+16_knowledge-base/.vscode/settings.json
