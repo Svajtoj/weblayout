@@ -75,4 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     colorWrong: '#ff5c00',
   });
+
+  tippy('#tooltip', {
+    maxWidth: 163,
+    // hideOnClick: false,
+    // trigger: 'click',
+  });
 });

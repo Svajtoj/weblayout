@@ -183,6 +183,7 @@ p {
 
 .validate-form {
   max-width: 440px;
+  margin-bottom: 50px;
   padding: 38px 30px 21px 30px;
   background: #000;
   border-radius: 10px;
@@ -235,4 +236,56 @@ p {
 .just-validate-tooltip-container {
   min-height: 12px;
   margin-bottom: 5px;
+}
+
+.tooltip-section {
+  max-width: 375px;
+  padding: 20px 78px 20px 29px;
+  background: #fff;
+}
+
+.tooltip-section__text {
+  font-size: 14px;
+  line-height: 23.8px;
+}
+
+.tooltip-btn {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 17px;
+  vertical-align: baseline;
+  text-align: center;
+  background-color: #bcbcbc;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tooltip-btn:hover,
+.tooltip-btn:focus {
+  background-color: #ccb26e;
+}
+
+.tippy-box {
+  border-radius: 0;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #666;
+}
+
+.tippy-content {
+  padding: 7px 15px;
+}
+
+.tippy-arrow {
+  color: #666;
+}
+
+.tippy-box[data-placement^="top"] > .tippy-arrow:before {
+  transform: scale(0.5, 0.8);
 }
