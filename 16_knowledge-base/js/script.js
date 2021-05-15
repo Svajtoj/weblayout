@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
       iconLayout: 'default#image',
       iconImageHref: 'img/Subtract.svg',
       iconImageSize: [48, 48],
-    }),
+    });
 
-      myMap.geoObjects.add(myPlacemark);
+    myMap.geoObjects.add(myPlacemark);
   }
 
   // Scroll
